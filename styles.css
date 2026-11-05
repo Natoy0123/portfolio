@@ -286,6 +286,18 @@ button {
   border: 1px solid #a7f3d0;
 }
 
+.badge-game {
+  background-color: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.badge-domain {
+  background-color: var(--bg-alt);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
 .badge-status {
   display: inline-flex;
   align-items: center;
@@ -479,6 +491,67 @@ button {
    PROJECT CARDS & CASE STUDIES
    ========================================================================== */
 
+.project-filter-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  margin-bottom: clamp(24px, 4vw, 36px);
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 160ms ease;
+}
+
+.filter-btn:hover {
+  color: var(--text);
+  background-color: var(--bg-alt);
+}
+
+.filter-btn.active {
+  background-color: var(--text);
+  color: var(--bg);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  font-size: 0.7rem;
+  border-radius: 999px;
+  background-color: var(--bg-alt);
+  color: var(--text-muted);
+}
+
+.filter-btn.active .filter-count {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--bg);
+}
+
 .project-list {
   display: flex;
   flex-direction: column;
@@ -491,7 +564,16 @@ button {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   padding: clamp(24px, 4vw, 40px);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  transition: opacity 200ms ease, transform 200ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.project-card.is-hidden {
+  display: none !important;
+}
+
+.project-card.fade-out {
+  opacity: 0;
+  transform: translateY(8px);
 }
 
 .project-card:hover {

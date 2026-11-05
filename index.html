@@ -58,10 +58,10 @@
 
         <div class="hero-content">
           <h1 class="hero-title" id="hero-title">
-            Building web and mobile systems with clean architecture and practical UI.
+            Building web systems, native mobile apps, and interactive games with clean architecture.
           </h1>
           <p class="hero-lead">
-            I am a 4th-year BSIT student at Bulacan State University specializing in full-stack web development and native Android applications. From user-focused interfaces to scalable REST APIs and geospatial maps, I create software that solves tangible problems.
+            I am a 4th-year BSIT student at Bulacan State University specializing in full-stack web development, native Android applications, and interactive Unity 2D games. From user-focused interfaces to scalable REST APIs and physics-driven gameplay, I create software that solves tangible problems.
           </p>
         </div>
 
@@ -74,11 +74,11 @@
           <div class="hero-meta-grid">
             <div class="meta-item">
               <span class="meta-label">Specialization</span>
-              <span class="meta-val">Full-Stack &amp; Android</span>
+              <span class="meta-val">Web, Mobile &amp; Game Dev</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Core Stack</span>
-              <span class="meta-val">React, Node, Java, MongoDB</span>
+              <span class="meta-val">React, Node, Java, Unity, C#</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Education</span>
@@ -95,16 +95,33 @@
         <div class="section-header">
           <div class="section-tag">Portfolio / 01</div>
           <h2 class="section-title" id="work-title">Featured Projects</h2>
-          <p class="section-subtitle">Real-world applications built end-to-end, from database schema to responsive interfaces.</p>
+          <p class="section-subtitle">Real-world applications built end-to-end across full-stack web platforms, native Android, and Unity game architecture.</p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="project-filter-bar" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">
+            <span class="filter-label">All Projects</span>
+            <span class="filter-count">3</span>
+          </button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="web">
+            <span class="filter-label">Web Platforms &amp; Systems</span>
+            <span class="filter-count">2</span>
+          </button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="game">
+            <span class="filter-label">Mobile &amp; Game Development</span>
+            <span class="filter-count">1</span>
+          </button>
         </div>
 
         <div class="project-list">
           <!-- Project 1: YTO Express -->
-          <article class="project-card">
+          <article class="project-card" data-category="web">
             <div class="project-grid">
               <div class="project-info">
                 <div class="project-eyebrow">
                   <span class="badge badge-capstone">Capstone Project</span>
+                  <span class="badge badge-domain">Logistics &amp; Android Ecosystem</span>
                   <span class="project-year">2023–2024</span>
                 </div>
 
@@ -167,11 +184,12 @@
           </article>
 
           <!-- Project 2: Hagonoy GroundWatch -->
-          <article class="project-card">
+          <article class="project-card" data-category="web">
             <div class="project-grid">
               <div class="project-info">
                 <div class="project-eyebrow">
                   <span class="badge badge-live">Live Web Platform</span>
+                  <span class="badge badge-domain">Civic Telemetry &amp; GIS</span>
                   <span class="project-year">2026</span>
                 </div>
 
@@ -238,6 +256,76 @@
               </div>
             </div>
           </article>
+
+          <!-- Project 3: Slime Food Drop -->
+          <article class="project-card" data-category="game">
+            <div class="project-grid">
+              <div class="project-info">
+                <div class="project-eyebrow">
+                  <span class="badge badge-game">Unity 2D Game</span>
+                  <span class="badge badge-domain">Mobile Arcade / Android</span>
+                  <span class="project-year">2026</span>
+                </div>
+
+                <h3 class="project-title">Slime Food Drop</h3>
+                <p class="project-summary">
+                  A physics-driven 2D casual arcade mobile game built in Unity 6 for Android portrait mode. Players control Bloop the Slime, steering with responsive touch input to catch falling treats, evade hazards, trigger combo multipliers, and clear 10 handcrafted themed stages.
+                </p>
+
+                <div class="project-details">
+                  <h4 class="details-heading">Gameplay Mechanics &amp; Architecture</h4>
+                  <ul class="feature-list">
+                    <li>
+                      <strong>Physics &amp; Character Juice:</strong> Dynamic squash-and-stretch body deformation, contact shadow morphing, mouth eating animations synchronized with food impact, and spring-physics button juice.
+                    </li>
+                    <li>
+                      <strong>10 Handcrafted Themed Stages:</strong> Distinct environments ranging from Whispering Forest to Frost Citadel, featuring unique color palettes, difficulty curves, and high-resolution portrait pixel backdrops.
+                    </li>
+                    <li>
+                      <strong>120 FPS High-Refresh Optimization:</strong> Engineered for fluid input response on high-refresh mobile screens, compiled with Unity IL2CPP ARM64 for native execution.
+                    </li>
+                    <li>
+                      <strong>Procedural Scene &amp; Tooling:</strong> Automated scene layout generator (<code>BuildMainGameScene.cs</code>), item drop sequencing, and local score persistence via PlayerPrefs.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project-tech">
+                  <span class="tech-tag">Unity 6 (6000.3.0f1)</span>
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">Android SDK</span>
+                  <span class="tech-tag">IL2CPP / ARM64</span>
+                  <span class="tech-tag">2D Physics</span>
+                  <span class="tech-tag">Arcade UI</span>
+                  <span class="tech-tag">120 FPS Mode</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    class="btn btn-secondary btn-sm"
+                    href="https://github.com/Natoy0123/SlimeFoodDrop"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Source Code &nearr;
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-preview">
+                <figure class="media-frame">
+                  <img
+                    src="assets/slime-food-drop.webp"
+                    width="1440"
+                    height="900"
+                    alt="Slime Food Drop game preview displaying mobile gameplay with Bloop the slime and retro arcade UI."
+                    loading="lazy"
+                  >
+                  <figcaption>Slime Food Drop — 2D Retro Arcade Game (Unity 6 / Android)</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -294,7 +382,7 @@
                 </div>
                 <div>
                   <dt>Primary Focus</dt>
-                  <dd>Web Apps, Android, API Development, UI Design</dd>
+                  <dd>Web Platforms, Native Android, Unity 2D Games</dd>
                 </div>
                 <div>
                   <dt>Work Status</dt>
@@ -321,6 +409,7 @@
             <h3 class="skill-cat-title">Programming Languages</h3>
             <ul class="skill-items">
               <li><strong>Java:</strong> Android SDK, OOP architecture, concurrency</li>
+              <li><strong>C#:</strong> Unity game architecture, OOP, physics systems, LINQ</li>
               <li><strong>JavaScript (ES6+):</strong> Modern async/await, DOM APIs, tooling</li>
               <li><strong>HTML5 &amp; CSS3:</strong> Semantic markup, responsive flex/grid, WCAG a11y</li>
               <li><strong>SQL:</strong> Relational schema concepts, querying, joins</li>
@@ -348,12 +437,12 @@
           </div>
 
           <div class="skill-category">
-            <h3 class="skill-cat-title">Mobile &amp; DevOps</h3>
+            <h3 class="skill-cat-title">Mobile &amp; Game Development</h3>
             <ul class="skill-items">
-              <li><strong>Android Development:</strong> Android Studio, CameraX, ZXing, Retrofit</li>
-              <li><strong>Testing &amp; QA:</strong> Playwright E2E automated testing, cross-browser audits</li>
-              <li><strong>Version Control:</strong> Git, GitHub workflows, release branching</li>
-              <li><strong>Deployment:</strong> Render static hosting, continuous deployment pipelines</li>
+              <li><strong>Unity 6 (2D):</strong> 2D physics, animation state machines, particle FX</li>
+              <li><strong>Game Architecture:</strong> Game loops, item spawner curves, PlayerPrefs data</li>
+              <li><strong>Android Development:</strong> Android Studio, CameraX, ZXing, IL2CPP 120 FPS</li>
+              <li><strong>DevOps &amp; QA:</strong> Git, GitHub workflows, Playwright E2E automated suites</li>
             </ul>
           </div>
         </div>

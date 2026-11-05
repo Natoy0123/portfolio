@@ -1,5 +1,6 @@
 # Local backup files
 backup/
+scratch/
 *.bak
 *.tmp
 

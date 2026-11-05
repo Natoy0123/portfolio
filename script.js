@@ -135,4 +135,40 @@
 
     sections.forEach((sec) => observer.observe(sec));
   }
+
+  // 4. Project Category Filter
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const projectCards = document.querySelectorAll(".project-card[data-category]");
+
+  if (filterButtons.length > 0 && projectCards.length > 0) {
+    filterButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const filter = btn.dataset.filter;
+
+        filterButtons.forEach((b) => {
+          const isActive = b === btn;
+          b.classList.toggle("active", isActive);
+          b.setAttribute("aria-selected", String(isActive));
+        });
+
+        projectCards.forEach((card) => {
+          const category = card.dataset.category;
+          const shouldShow = filter === "all" || category === filter;
+
+          if (shouldShow) {
+            card.classList.remove("is-hidden");
+            // Allow display change to take effect before removing fade-out class
+            setTimeout(() => {
+              card.classList.remove("fade-out");
+            }, 20);
+          } else {
+            card.classList.add("fade-out");
+            setTimeout(() => {
+              card.classList.add("is-hidden");
+            }, 200);
+          }
+        });
+      });
+    });
+  }
 })();
