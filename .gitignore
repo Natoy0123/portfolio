@@ -1,0 +1,10 @@
+# Local backup files
+backup/
+*.bak
+*.tmp
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

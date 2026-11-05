@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Del Ayre — Web &amp; Mobile App Developer</title>
+  <meta name="description" content="Portfolio of Patrick Del Ayre, a full-stack web and Android mobile developer based in Bulacan, Philippines.">
+  <meta name="theme-color" content="#f8f6f0">
+  <meta property="og:title" content="Patrick Del Ayre — Web &amp; Mobile App Developer">
+  <meta property="og:description" content="Full-stack web applications and native Android systems, from interface design to backend APIs.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231a1714'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='bold' fill='%23f8f6f0' text-anchor='middle'%3EPDA%3C/text%3E%3Ccircle cx='50' cy='16' r='4' fill='%23c2410c'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Patrick Del Ayre, back to top">
+        <span class="brand-name">
+          <span class="brand-full">Patrick Del Ayre</span>
+          <span class="brand-short">PDA</span>
+        </span>
+        <span class="brand-dot" aria-hidden="true">•</span>
+        <span class="brand-tag">Developer</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <span class="menu-label">Menu</span>
+        <span class="menu-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-header">
+          <div class="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for Internship &amp; Junior Roles</span>
+          </div>
+          <span class="hero-location">Calumpit, Bulacan, PH</span>
+        </div>
+
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">
+            Building web and mobile systems with clean architecture and practical UI.
+          </h1>
+          <p class="hero-lead">
+            I am a 4th-year BSIT student at Bulacan State University specializing in full-stack web development and native Android applications. From user-focused interfaces to scalable REST APIs and geospatial maps, I create software that solves tangible problems.
+          </p>
+        </div>
+
+        <div class="hero-footer">
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">Explore Featured Work &darr;</a>
+            <a class="btn btn-secondary" href="#contact">Get in Touch &rarr;</a>
+          </div>
+
+          <div class="hero-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Specialization</span>
+              <span class="meta-val">Full-Stack &amp; Android</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Core Stack</span>
+              <span class="meta-val">React, Node, Java, MongoDB</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Education</span>
+              <span class="meta-val">BSIT, BulSU (2023–Present)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Portfolio / 01</div>
+          <h2 class="section-title" id="work-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications built end-to-end, from database schema to responsive interfaces.</p>
+        </div>
+
+        <div class="project-list">
+          <!-- Project 1: YTO Express -->
+          <article class="project-card">
+            <div class="project-grid">
+              <div class="project-info">
+                <div class="project-eyebrow">
+                  <span class="badge badge-capstone">Capstone Project</span>
+                  <span class="project-year">2023–2024</span>
+                </div>
+
+                <h3 class="project-title">YTO Express Logistics Platform</h3>
+                <p class="project-summary">
+                  A multi-role logistics and package delivery management ecosystem designed to streamline operations between merchants, dispatch coordinators, and delivery riders.
+                </p>
+
+                <div class="project-details">
+                  <h4 class="details-heading">System Components &amp; Architecture</h4>
+                  <ul class="feature-list">
+                    <li>
+                      <strong>Native Android Application (Java):</strong> Built with MapLibre GPS routing, CameraX for high-speed QR/barcode scanning, role-based dashboards, and geofenced proof-of-delivery photo capture.
+                    </li>
+                    <li>
+                      <strong>React 19 Admin Portal:</strong> Web dashboard for live parcel triage, rider shift monitoring, hub inventory receiving, and dispute handling.
+                    </li>
+                    <li>
+                      <strong>Backend REST API:</strong> Node.js and Express server with MongoDB, implementing JWT session security, OTP verification, and real-time app-to-web synchronization.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project-roles">
+                  <span class="roles-label">Supported Portals:</span>
+                  <div class="role-badges">
+                    <span class="role-badge">Merchant Bulk Booking</span>
+                    <span class="role-badge">Customer Parcel Tracking</span>
+                    <span class="role-badge">Rider Task Execution</span>
+                  </div>
+                </div>
+
+                <div class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Android SDK</span>
+                  <span class="tech-tag">React 19</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">MapLibre</span>
+                  <span class="tech-tag">CameraX</span>
+                </div>
+              </div>
+
+              <div class="project-preview">
+                <figure class="media-frame">
+                  <img
+                    src="assets/yto-admin.webp"
+                    width="1440"
+                    height="900"
+                    alt="YTO Express admin portal sign-in interface with brand styling and logistics background."
+                    loading="lazy"
+                  >
+                  <figcaption>YTO Express Admin Portal Interface</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Hagonoy GroundWatch -->
+          <article class="project-card">
+            <div class="project-grid">
+              <div class="project-info">
+                <div class="project-eyebrow">
+                  <span class="badge badge-live">Live Web Platform</span>
+                  <span class="project-year">2026</span>
+                </div>
+
+                <h3 class="project-title">Hagonoy GroundWatch</h3>
+                <p class="project-summary">
+                  An open-access civic telemetry and environmental GIS platform addressing chronic land subsidence and sunny-day tidal flooding in Hagonoy, Bulacan. It synthesizes satellite InSAR geodesy and geological data into actionable community tools.
+                </p>
+
+                <div class="project-details">
+                  <h4 class="details-heading">System Components &amp; Architecture</h4>
+                  <ul class="feature-list">
+                    <li>
+                      <strong>Interactive Geospatial Hazard Map:</strong> Powered by Leaflet.js with custom GeoJSON polygon corridors, multi-tier risk filtering (Critical, Severe, Moderate), fly-to zoom controls, and sector geological dossiers.
+                    </li>
+                    <li>
+                      <strong>Aquifer Stress Simulator:</strong> Mathematical model computing annual subsidence rates (cm/yr) and one-meter subsidence timelines based on groundwater overdraft parameters.
+                    </li>
+                    <li>
+                      <strong>Citizen Science Incident Reporting:</strong> In-browser intake form with local data persistence, interactive confirmation dialogs, tracking receipts (HGW-XXXX), and a live observation feed.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project-tech">
+                  <span class="tech-tag">React 19</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">Tailwind CSS v4</span>
+                  <span class="tech-tag">Leaflet.js</span>
+                  <span class="tech-tag">GeoJSON</span>
+                  <span class="tech-tag">Playwright E2E</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="https://hagonoy-groundwatch-tik7.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Live Deployment &nearr;
+                  </a>
+                  <a
+                    class="btn btn-secondary btn-sm"
+                    href="https://github.com/Natoy0123/hagonoy-groundwatch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Source Code &nearr;
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-preview">
+                <figure class="media-frame">
+                  <img
+                    src="assets/groundwatch.webp"
+                    width="1440"
+                    height="900"
+                    alt="Hagonoy GroundWatch platform displaying the hero telemetry summary and subsidence indicators."
+                    loading="lazy"
+                  >
+                  <figcaption>Hagonoy GroundWatch Telemetry Interface</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-main">
+            <div class="section-tag">Background / 02</div>
+            <h2 class="section-title" id="about-title">Engineering with Purpose &amp; Clarity</h2>
+            <div class="prose">
+              <p class="lead-text">
+                I am an Information Technology student who bridges practical software engineering with thoughtful interface design.
+              </p>
+              <p>
+                My focus centers on full-stack application development: modular React frontends on the web, performant native Android apps on mobile, and structured Node/Express APIs backed by MongoDB on the server.
+              </p>
+              <p>
+                Having spent significant time engineering both logistics systems and civic environmental platforms, I prioritize software that remains dependable under real-world constraints—accessible on budget mobile devices, respectful of keyboard navigation, and clear in every label and workflow.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-aside">
+            <div class="profile-card">
+              <h3 class="card-heading">Quick Profile</h3>
+              <dl class="profile-dl">
+                <div>
+                  <dt>Name</dt>
+                  <dd>Patrick Froilan S. Del Ayre</dd>
+                </div>
+                <div>
+                  <dt>Degree</dt>
+                  <dd>BS Information Technology (Senior)</dd>
+                </div>
+                <div>
+                  <dt>Institution</dt>
+                  <dd>Bulacan State University</dd>
+                </div>
+                <div>
+                  <dt>Location</dt>
+                  <dd>Calumpit, Bulacan, Philippines</dd>
+                </div>
+                <div>
+                  <dt>Primary Focus</dt>
+                  <dd>Web Apps, Android, API Development, UI Design</dd>
+                </div>
+                <div>
+                  <dt>Work Status</dt>
+                  <dd><span class="badge-status">Open to Internships &amp; Junior Roles</span></dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Capabilities / 03</div>
+          <h2 class="section-title" id="skills-title">Technical Tooling &amp; Skills</h2>
+          <p class="section-subtitle">Core technologies, frameworks, and developer tools applied across my projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Programming Languages</h3>
+            <ul class="skill-items">
+              <li><strong>Java:</strong> Android SDK, OOP architecture, concurrency</li>
+              <li><strong>JavaScript (ES6+):</strong> Modern async/await, DOM APIs, tooling</li>
+              <li><strong>HTML5 &amp; CSS3:</strong> Semantic markup, responsive flex/grid, WCAG a11y</li>
+              <li><strong>SQL:</strong> Relational schema concepts, querying, joins</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Frontend Engineering</h3>
+            <ul class="skill-items">
+              <li><strong>React 19 &amp; Vite:</strong> Component lifecycle, hooks, state management</li>
+              <li><strong>Tailwind CSS:</strong> Utility-first responsive design tokens</li>
+              <li><strong>Geospatial Libraries:</strong> Leaflet.js, MapLibre, OpenStreetMap</li>
+              <li><strong>UI/UX Design:</strong> Typographic hierarchy, wireframing, layout ergonomics</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Backend &amp; Database</h3>
+            <ul class="skill-items">
+              <li><strong>Node.js &amp; Express:</strong> RESTful API design, middleware, error handling</li>
+              <li><strong>MongoDB &amp; Mongoose:</strong> Document modeling, indexing, aggregation</li>
+              <li><strong>Authentication:</strong> JWT session tokens, OTP verification, bcrypt</li>
+              <li><strong>Storage:</strong> HTML5 Web Storage, structured JSON persistence</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Mobile &amp; DevOps</h3>
+            <ul class="skill-items">
+              <li><strong>Android Development:</strong> Android Studio, CameraX, ZXing, Retrofit</li>
+              <li><strong>Testing &amp; QA:</strong> Playwright E2E automated testing, cross-browser audits</li>
+              <li><strong>Version Control:</strong> Git, GitHub workflows, release branching</li>
+              <li><strong>Deployment:</strong> Render static hosting, continuous deployment pipelines</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <div class="section-tag contact-tag">Get in Touch / 04</div>
+            <h2 class="contact-title" id="contact-title">Let's build something worthwhile together.</h2>
+            <p class="contact-subtitle">
+              I am actively seeking internship opportunities and entry-level junior developer positions. Whether you have an open role, a collaborative project, or a technical inquiry, feel free to reach out.
+            </p>
+          </div>
+
+          <div class="contact-main">
+            <div class="email-display">
+              <span class="email-label">Direct Email</span>
+              <a class="email-address" href="mailto:patrickdelayre30@gmail.com">patrickdelayre30@gmail.com</a>
+            </div>
+
+            <div class="contact-buttons">
+              <button class="btn btn-primary" type="button" id="copy-email-btn" data-email="patrickdelayre30@gmail.com">
+                <span id="copy-btn-text">Copy Email Address</span>
+              </button>
+              <a class="btn btn-outline" href="mailto:patrickdelayre30@gmail.com">
+                Open Email Client &nearr;
+              </a>
+              <a class="btn btn-outline" href="https://github.com/Natoy0123" target="_blank" rel="noopener noreferrer">
+                GitHub: @Natoy0123 &nearr;
+              </a>
+            </div>
+            <p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <div class="footer-left">
+            <span>&copy; 2026 Patrick Froilan S. Del Ayre</span>
+            <span class="footer-divider">•</span>
+            <span>BSIT 4A-G1, Bulacan State University</span>
+          </div>
+          <div class="footer-right">
+            <span>Built with semantic HTML, modern CSS, and vanilla JS.</span>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

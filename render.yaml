@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: patrick-delayre-portfolio
+    env: static
+    buildCommand: ""
+    staticPublishPath: ./
+    pullRequestPreviewsEnabled: false
