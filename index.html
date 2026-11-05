@@ -102,69 +102,71 @@
         <div class="project-filter-bar" role="tablist" aria-label="Filter projects by category">
           <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">
             <span class="filter-label">All Projects</span>
-            <span class="filter-count">3</span>
+            <span class="filter-count">4</span>
           </button>
           <button class="filter-btn" role="tab" aria-selected="false" data-filter="web">
             <span class="filter-label">Web Platforms &amp; Systems</span>
             <span class="filter-count">2</span>
           </button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="mobile">
+            <span class="filter-label">Mobile Android Apps</span>
+            <span class="filter-count">1</span>
+          </button>
           <button class="filter-btn" role="tab" aria-selected="false" data-filter="game">
-            <span class="filter-label">Mobile &amp; Game Development</span>
+            <span class="filter-label">Game Development</span>
             <span class="filter-count">1</span>
           </button>
         </div>
 
         <div class="project-list">
-          <!-- Project 1: YTO Express -->
+          <!-- Project 1: YTO Express Web Admin Portal -->
           <article class="project-card" data-category="web">
             <div class="project-grid">
               <div class="project-info">
                 <div class="project-eyebrow">
                   <span class="badge badge-capstone">Capstone Project</span>
-                  <span class="badge badge-domain">Logistics &amp; Android Ecosystem</span>
-                  <span class="project-year">2023–2024</span>
+                  <span class="badge badge-domain">Web Admin &amp; Dispatch System</span>
+                  <span class="project-year">2024–2025 &amp; 2025–2026</span>
                 </div>
 
-                <h3 class="project-title">YTO Express Logistics Platform</h3>
+                <h3 class="project-title">YTO Express — Admin &amp; Dispatch Web Portal</h3>
                 <p class="project-summary">
-                  A multi-role logistics and package delivery management ecosystem designed to streamline operations between merchants, dispatch coordinators, and delivery riders.
+                  The central web command center for the YTO Express logistics ecosystem, enabling super-admins and hub coordinators to oversee parcel triage, monitor active riders via live GPS, manage seller accounts, and resolve delivery disputes.
                 </p>
 
                 <div class="project-details">
                   <h4 class="details-heading">System Components &amp; Architecture</h4>
                   <ul class="feature-list">
                     <li>
-                      <strong>Native Android Application (Java):</strong> Built with MapLibre GPS routing, CameraX for high-speed QR/barcode scanning, role-based dashboards, and geofenced proof-of-delivery photo capture.
+                      <strong>React 19 Admin Dashboard:</strong> Real-time analytics displaying delivery success rates, daily/weekly parcel volume charts, pending verifications, and CSV/PDF operational reporting.
                     </li>
                     <li>
-                      <strong>React 19 Admin Portal:</strong> Web dashboard for live parcel triage, rider shift monitoring, hub inventory receiving, and dispute handling.
+                      <strong>Live Rider &amp; Geofence Monitoring:</strong> Interactive GPS coordinate tracking and hub geofence oversight for on-duty tricycle, motorcycle, and e-bike couriers.
                     </li>
                     <li>
-                      <strong>Backend REST API:</strong> Node.js and Express server with MongoDB, implementing JWT session security, OTP verification, and real-time app-to-web synchronization.
+                      <strong>Backend REST API:</strong> Node.js and Express server with MongoDB, implementing role-based JWT authentication, OTP verification, and real-time synchronization with the Android courier app.
                     </li>
                   </ul>
                 </div>
 
                 <div class="project-roles">
-                  <span class="roles-label">Supported Portals:</span>
+                  <span class="roles-label">Admin Modules:</span>
                   <div class="role-badges">
-                    <span class="role-badge">Merchant Bulk Booking</span>
-                    <span class="role-badge">Customer Parcel Tracking</span>
-                    <span class="role-badge">Rider Task Execution</span>
+                    <span class="role-badge">Hub Inventory Triage</span>
+                    <span class="role-badge">Live Rider GPS Duty Monitor</span>
+                    <span class="role-badge">Seller &amp; Issue Management</span>
                   </div>
                 </div>
 
                 <div class="project-tech">
-                  <span class="tech-tag">Java</span>
-                  <span class="tech-tag">Android SDK</span>
                   <span class="tech-tag">React 19</span>
                   <span class="tech-tag">Vite</span>
                   <span class="tech-tag">Tailwind CSS</span>
                   <span class="tech-tag">Node.js</span>
                   <span class="tech-tag">Express</span>
                   <span class="tech-tag">MongoDB</span>
-                  <span class="tech-tag">MapLibre</span>
-                  <span class="tech-tag">CameraX</span>
+                  <span class="tech-tag">JWT &amp; OTP</span>
+                  <span class="tech-tag">Leaflet / Maps</span>
                 </div>
               </div>
 
@@ -177,7 +179,76 @@
                     alt="YTO Express admin portal sign-in interface with brand styling and logistics background."
                     loading="lazy"
                   >
-                  <figcaption>YTO Express Admin Portal Interface</figcaption>
+                  <figcaption>YTO Express — Web Admin &amp; Dispatch Portal Interface</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: YTO Express Mobile Application -->
+          <article class="project-card" data-category="mobile">
+            <div class="project-grid">
+              <div class="project-info">
+                <div class="project-eyebrow">
+                  <span class="badge badge-capstone">Capstone Project</span>
+                  <span class="badge badge-domain">Native Android Application</span>
+                  <span class="project-year">2024–2025 &amp; 2025–2026</span>
+                </div>
+
+                <h3 class="project-title">YTO Express — Courier, Seller &amp; Tracking Mobile App</h3>
+                <p class="project-summary">
+                  A native Android mobile application engineered in Java that powers field operations for YTO Express—unifying merchant parcel booking, customer live GPS shipment tracking, interactive hub location, and rider delivery execution.
+                </p>
+
+                <div class="project-details">
+                  <h4 class="details-heading">Mobile Engineering &amp; Features</h4>
+                  <ul class="feature-list">
+                    <li>
+                      <strong>MapLibre Live Route &amp; ETA Tracking:</strong> Real-time turn-by-turn route polylines, courier proximity calculation, and branch hub locator across Bulacan municipalities (Calumpit, Pulilan, Malolos, Baliuag).
+                    </li>
+                    <li>
+                      <strong>CameraX QR Waybill Scanner &amp; Booking:</strong> High-speed barcode/QR scanning for instant parcel lookup, multi-step seller pickup booking, and bulk hub drop-off sheets.
+                    </li>
+                    <li>
+                      <strong>Geofenced Proof of Delivery (POD) &amp; E-Receipts:</strong> Verifies rider arrival at the recipient's destination coordinates before unlocking camera POD capture and generating official digital delivery receipts.
+                    </li>
+                    <li>
+                      <strong>In-App Real-Time Chat &amp; Notifications:</strong> Direct messaging between customers, sellers, and assigned riders with unread badges and automated SMS/push status alerts.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="project-roles">
+                  <span class="roles-label">Mobile Workflows:</span>
+                  <div class="role-badges">
+                    <span class="role-badge">Merchant Pickup Booking</span>
+                    <span class="role-badge">Customer Live Map Tracking</span>
+                    <span class="role-badge">Rider Geofenced POD</span>
+                  </div>
+                </div>
+
+                <div class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Android SDK</span>
+                  <span class="tech-tag">MapLibre SDK</span>
+                  <span class="tech-tag">CameraX</span>
+                  <span class="tech-tag">ZXing QR</span>
+                  <span class="tech-tag">Material Design 3</span>
+                  <span class="tech-tag">REST API Client</span>
+                  <span class="tech-tag">Geofencing</span>
+                </div>
+              </div>
+
+              <div class="project-preview">
+                <figure class="media-frame">
+                  <img
+                    src="assets/yto-mobile.webp"
+                    width="1440"
+                    height="900"
+                    alt="YTO Express native Android mobile app screens showing onboarding, live MapLibre GPS tracking, interactive hub locator, and official delivery receipt."
+                    loading="lazy"
+                  >
+                  <figcaption>YTO Express — Native Android App (Onboarding, Live Tracking, Hub Locator &amp; E-Receipt)</figcaption>
                 </figure>
               </div>
             </div>
