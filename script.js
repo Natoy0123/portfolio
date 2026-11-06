@@ -171,4 +171,95 @@
       });
     });
   }
+
+  // 5. 3D Rounded / Stacked Interactive Carousels
+  const carousels = document.querySelectorAll("[data-carousel]");
+
+  carousels.forEach((carousel) => {
+    const cards = Array.from(carousel.querySelectorAll(".carousel-card"));
+    const prevBtn = carousel.querySelector(".carousel-arrow--prev");
+    const nextBtn = carousel.querySelector(".carousel-arrow--next");
+    const captionEl = carousel.querySelector(".carousel-caption");
+    const dotsContainer = carousel.querySelector(".carousel-dots");
+    const total = cards.length;
+    if (total === 0) return;
+
+    let activeIndex = 0;
+
+    // Build pagination dots
+    const dots = cards.map((card, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "carousel-dot" + (i === 0 ? " is-active" : "");
+      dot.setAttribute("role", "tab");
+      dot.setAttribute("aria-label", `Slide ${i + 1}: ${card.dataset.caption || ""}`);
+      dot.setAttribute("aria-selected", String(i === 0));
+      dot.addEventListener("click", () => goTo(i));
+      if (dotsContainer) dotsContainer.appendChild(dot);
+      return dot;
+    });
+
+    function updatePositions() {
+      cards.forEach((card, i) => {
+        const diff = (i - activeIndex + total) % total;
+        let pos = "back";
+        if (diff === 0) pos = "active";
+        else if (diff === 1) pos = "next";
+        else if (diff === total - 1) pos = "prev";
+
+        card.setAttribute("data-pos", pos);
+        card.setAttribute("aria-hidden", String(pos !== "active"));
+      });
+
+      dots.forEach((dot, i) => {
+        const isActive = i === activeIndex;
+        dot.classList.toggle("is-active", isActive);
+        dot.setAttribute("aria-selected", String(isActive));
+      });
+
+      if (captionEl) {
+        const label = cards[activeIndex].dataset.caption || "";
+        captionEl.textContent = `${activeIndex + 1} / ${total} — ${label}`;
+      }
+    }
+
+    function goTo(index) {
+      activeIndex = (index + total) % total;
+      updatePositions();
+    }
+
+    if (prevBtn) prevBtn.addEventListener("click", () => goTo(activeIndex - 1));
+    if (nextBtn) nextBtn.addEventListener("click", () => goTo(activeIndex + 1));
+
+    // Clicking a side/back card spins the carousel to that card
+    cards.forEach((card, i) => {
+      card.addEventListener("click", () => {
+        if (i !== activeIndex) goTo(i);
+      });
+    });
+
+    // Touch swipe support
+    let touchStartX = 0;
+    carousel.addEventListener(
+      "touchstart",
+      (e) => {
+        if (e.touches.length > 0) touchStartX = e.touches[0].clientX;
+      },
+      { passive: true }
+    );
+    carousel.addEventListener(
+      "touchend",
+      (e) => {
+        if (e.changedTouches.length > 0) {
+          const deltaX = e.changedTouches[0].clientX - touchStartX;
+          if (Math.abs(deltaX) > 40) {
+            goTo(deltaX < 0 ? activeIndex + 1 : activeIndex - 1);
+          }
+        }
+      },
+      { passive: true }
+    );
+
+    updatePositions();
+  });
 })();
