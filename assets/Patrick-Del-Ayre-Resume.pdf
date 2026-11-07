@@ -1,4 +1,5 @@
 %PDF-1.4
+%‚„œ”
 1 0 obj
 << /Type /Catalog /Pages 2 0 R >>
 endobj
@@ -6,81 +7,110 @@ endobj
 << /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
-endobj
-5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
-endobj
-6 0 obj
-<< /Length 6182 >>
+<< /Length 8092 >>
 stream
 0.761 0.255 0.047 rg 0 786 612 6 re f
-BT /F2 20 Tf 0.098 0.086 0.071 rg 48 742 Td (PATRICK FROILAN S. DEL AYRE) Tj ET
-BT /F1 11 Tf 0.761 0.255 0.047 rg 48 724 Td (Full-Stack Web, Native Android & Unity 2D Game Developer) Tj ET
-BT /F1 9.5 Tf 0.370 0.340 0.300 rg 48 708 Td (Calumpit, Bulacan, Philippines  |  patrickdelayre30@gmail.com  |  github.com/Natoy0123) Tj ET
-0.8 w 0.850 0.820 0.780 RG 48 694 m 564 694 l S
-BT /F2 9.5 Tf 0.761 0.255 0.047 rg 48 676 Td (PROFESSIONAL SUMMARY) Tj ET
-BT /F1 9.5 Tf 0.100 0.090 0.070 rg 48 661 Td (Senior BS Information Technology student \(BSIT 4A-G1\) at Bulacan State University specializing in end-to-end) Tj ET
-BT /F1 9.5 Tf 0.100 0.090 0.070 rg 48 648 Td (software engineering across React 19 web platforms, native Java Android applications, Node.js/Express REST APIs,) Tj ET
-BT /F1 9.5 Tf 0.100 0.090 0.070 rg 48 635 Td (real-time geospatial telemetry \(Leaflet/MapLibre\), and 120 FPS Unity 6 2D mobile games.) Tj ET
-0.6 w 0.850 0.820 0.780 RG 48 622 m 564 622 l S
-BT /F2 9.5 Tf 0.761 0.255 0.047 rg 48 604 Td (TECHNICAL SKILLS) Tj ET
-BT /F2 9.5 Tf 0.100 0.090 0.070 rg 48 589 Td (Languages:) Tj ET
-BT /F1 9.5 Tf 0.100 0.090 0.070 rg 135 589 Td (Java \(Android SDK\), JavaScript \(ES6+\), C# \(Unity 6\), HTML5, CSS3, SQL) Tj ET
-BT /F2 9.5 Tf 0.100 0.090 0.070 rg 48 575 Td (Frontend & GIS:) Tj ET
-BT /F1 9.5 Tf 0.100 0.090 0.070 rg 135 575 Td (React 19, Vite, Tailwind CSS, Leaflet.js, MapLibre SDK, GeoJSON, Responsive WCAG UI) Tj ET
-BT /F2 9.5 Tf 0.100 0.090 0.070 rg 48 561 Td (Backend & Data:) Tj ET
-BT /F1 9.5 Tf 0.100 0.090 0.070 rg 135 561 Td (Node.js, Express 5, MongoDB, Mongoose, Server-Sent Events \(SSE\), JWT & OTP Auth, REST Bridge APIs) Tj ET
-BT /F2 9.5 Tf 0.100 0.090 0.070 rg 48 547 Td (Mobile & QA:) Tj ET
-BT /F1 9.5 Tf 0.100 0.090 0.070 rg 135 547 Td (Android Studio, CameraX, ZXing QR, Material Design 3, Unity IL2CPP ARM64, Git, Playwright E2E) Tj ET
-0.6 w 0.850 0.820 0.780 RG 48 534 m 564 534 l S
-BT /F2 9.5 Tf 0.761 0.255 0.047 rg 48 516 Td (FEATURED ENGINEERING PROJECTS) Tj ET
-BT /F2 10.5 Tf 0.100 0.090 0.070 rg 48 499 Td (YTO Express  -  Admin & Dispatch Web Portal \(Capstone Project\)) Tj ET
-BT /F2 9 Tf 0.370 0.340 0.300 rg 440 499 Td (2024 - 2026) Tj ET
-BT /F1 8.8 Tf 0.370 0.340 0.300 rg 48 486 Td (React 19, Vite, Tailwind CSS, Node.js, Express, MongoDB, Leaflet GIS, SSE  |  github.com/Natoy0123/yto-express-web) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 472 Td (- Engineered the central logistics command dashboard with real-time KPI progress cards, rider rankings, and PDF/CSV/XLSX exports.) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 459 Td (- Built a 10-hub Bulacan regional geofence monitor with Satellite/Geofence/Heatmap layers and live rider GPS boundary alerts.) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 446 Td (- Implemented bidirectional Bridge API sync \(syncParcel, sendStatus, YTOQR1 enterprise QR payloads\) with SSE live streaming.) Tj ET
-BT /F2 10.5 Tf 0.100 0.090 0.070 rg 48 426 Td (YTO Express  -  Courier, Seller & Tracking Mobile App \(Capstone Project\)) Tj ET
-BT /F2 9 Tf 0.370 0.340 0.300 rg 440 426 Td (2024 - 2026) Tj ET
-BT /F1 8.8 Tf 0.370 0.340 0.300 rg 48 413 Td (Java, Android SDK, MapLibre SDK, CameraX, ZXing QR, Material Design 3  |  github.com/Natoy0123/YTO-Express-App) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 399 Td (- Developed a multi-role native Android app unifying Seller 4-step pickup booking, Customer live GPS tracking, and Rider dispatch.) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 386 Td (- Integrated CameraX + ZXing high-speed waybill QR scanning and MapLibre turn-by-turn route polylines across Bulacan hubs.) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 373 Td (- Enforced 10m/20m doorstep GPS geofencing before unlocking Proof of Delivery \(POD\) photo capture and digital e-receipts.) Tj ET
-BT /F2 10.5 Tf 0.100 0.090 0.070 rg 48 353 Td (Hagonoy GroundWatch  -  Civic Telemetry & Subsidence GIS Platform) Tj ET
-BT /F2 9 Tf 0.370 0.340 0.300 rg 485 353 Td (2026) Tj ET
-BT /F1 8.8 Tf 0.370 0.340 0.300 rg 48 340 Td (React 19, Vite, Tailwind CSS v4, Leaflet.js, GeoJSON, Playwright E2E  |  hagonoy-groundwatch-tik7.onrender.com) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 326 Td (- Built an open-access civic GIS platform modeling coastal land subsidence and tidal flooding across 26 Hagonoy barangays.) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 313 Td (- Created an interactive Leaflet hazard map with Critical/Severe/Moderate polygon filtering and an Aquifer Stress Simulator.) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 300 Td (- Implemented a citizen science incident reporting intake system with tracking receipts \(HGW-XXXX\) and Playwright E2E tests.) Tj ET
-BT /F2 10.5 Tf 0.100 0.090 0.070 rg 48 280 Td (Slime Food Drop  -  120 FPS Unity 2D Mobile Arcade Game) Tj ET
-BT /F2 9 Tf 0.370 0.340 0.300 rg 485 280 Td (2026) Tj ET
-BT /F1 8.8 Tf 0.370 0.340 0.300 rg 48 267 Td (Unity 6 \(6000.3.0f1\), C#, Android SDK, IL2CPP ARM64, 2D Physics  |  github.com/Natoy0123/SlimeFoodDrop) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 253 Td (- Engineered a portrait 2D mobile arcade game featuring squash-and-stretch character physics and 10 handcrafted themed stages.) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 240 Td (- Optimized touch input and rendering pipeline for 120 FPS mobile displays using Unity IL2CPP ARM64 native compilation.) Tj ET
-0.6 w 0.850 0.820 0.780 RG 48 224 m 564 224 l S
-BT /F2 9.5 Tf 0.761 0.255 0.047 rg 48 206 Td (EDUCATION & ACADEMIC MILESTONES) Tj ET
-BT /F2 10.5 Tf 0.100 0.090 0.070 rg 48 189 Td (Bachelor of Science in Information Technology \(BSIT 4A-G1\)) Tj ET
-BT /F2 9 Tf 0.370 0.340 0.300 rg 430 189 Td (2023 - Present \(Senior\)) Tj ET
-BT /F1 9.5 Tf 0.370 0.340 0.300 rg 48 175 Td (Bulacan State University \(BulSU\)  -  Malolos, Bulacan, Philippines) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 160 Td (- Lead Full-Stack Web & Native Android Developer for the 2-year YTO Express Logistics Capstone System \(2024-2026\).) Tj ET
-BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 147 Td (- Relevant Coursework: Web Systems & Technologies, Mobile Application Development, Database Management, GIS Telemetry, QA.) Tj ET
+BT /F2 18 Tf 0.098 0.086 0.071 rg 44 746 Td (PATRICK FROILAN S. DEL AYRE) Tj ET
+BT /F1 9.5 Tf 0.761 0.255 0.047 rg 44 730 Td (Information Technology Professional | Mobile App & Web Development) Tj ET
+BT /F1 8.5 Tf 0.370 0.340 0.300 rg 44 716 Td (Purok 1, Carillo, Hagonoy, Bulacan  |  patrickdelayre30@gmail.com  |  09495635655  |  github.com/Natoy0123) Tj ET
+0.8 w 0.850 0.820 0.780 RG 44 705 m 568 705 l S
+BT /F2 9 Tf 0.761 0.255 0.047 rg 44 691 Td (PROFESSIONAL OBJECTIVE) Tj ET
+BT /F1 8.5 Tf 0.100 0.090 0.070 rg 44 678 Td (Aspiring IT professional pursuing an Information Technology degree and seeking an internship to develop industry experience and enhance) Tj ET
+BT /F1 8.5 Tf 0.100 0.090 0.070 rg 44 667 Td (technical expertise. Possesses strong foundational knowledge in software development, database management, networking, and project) Tj ET
+BT /F1 8.5 Tf 0.100 0.090 0.070 rg 44 656 Td (management principles. Brings analytical thinking, adaptability, and a proactive approach to learning and problem-solving.) Tj ET
+0.5 w 0.850 0.820 0.780 RG 44 646 m 568 646 l S
+BT /F2 9 Tf 0.761 0.255 0.047 rg 44 632 Td (EDUCATIONAL BACKGROUND) Tj ET
+BT /F2 9.5 Tf 0.100 0.090 0.070 rg 44 619 Td (Bulacan State University - Hagonoy Campus) Tj ET
+BT /F2 8.5 Tf 0.370 0.340 0.300 rg 485 619 Td (2023 - Present) Tj ET
+BT /F1 8.5 Tf 0.100 0.090 0.070 rg 52 608 Td (Bachelor of Science in Information Technology \(BSIT\) - Dean's Lister from A.Y. 2023-2024) Tj ET
+BT /F2 9.5 Tf 0.100 0.090 0.070 rg 44 595 Td (Iba National High School) Tj ET
+BT /F2 8.5 Tf 0.370 0.340 0.300 rg 495 595 Td (2021 - 2023) Tj ET
+BT /F1 8 Tf 0.100 0.090 0.070 rg 52 584 Td (Senior High School, STEM Strand - Graduated with Highest Honors | Central Luzon Campus Journalist | Chief/Science Editor \(Ang Ibanian\)) Tj ET
+BT /F2 9.5 Tf 0.100 0.090 0.070 rg 44 571 Td (Iba National High School) Tj ET
+BT /F2 8.5 Tf 0.370 0.340 0.300 rg 495 571 Td (2017 - 2020) Tj ET
+BT /F1 8.5 Tf 0.100 0.090 0.070 rg 52 560 Td (Junior High School - Graduated with High Honors) Tj ET
+0.5 w 0.850 0.820 0.780 RG 44 550 m 568 550 l S
+BT /F2 9 Tf 0.761 0.255 0.047 rg 44 536 Td (TECHNICAL SKILLS) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 523 Td (Development:) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 150 523 Td (Mobile App Development \(Android Java, CameraX, ZXing\), Web Development \(React 19, HTML5, CSS3, Vite\)) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 511 Td (Programming & Data:) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 150 511 Td (SQL, Data Analysis \(Excel, Python\), Algorithm Design & Analysis, JavaScript, C#, Java) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 499 Td (Database:) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 150 499 Td (Database Design & Normalization \(1NF-3NF\), Database Management \(MySQL, PostgreSQL, MongoDB/Mongoose\)) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 487 Td (Systems & Networking:) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 150 487 Td (Windows & Linux Environments, File System Management, Basic Networking \(IP Addressing, DNS, Routers, Switches\)) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 475 Td (Security & PM:) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 150 475 Td (Basic Encryption & Authentication \(JWT, OTP, bcrypt\), Safe Coding, Agile Methodologies, Jira, Trello, MS Project) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 463 Td (Documentation & IT:) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 150 463 Td (Technical Documentation, Report Writing, Microsoft 365, Google Workspace, Version Control \(Git\), Troubleshooting) Tj ET
+0.5 w 0.850 0.820 0.780 RG 44 452 m 568 452 l S
+BT /F2 9 Tf 0.761 0.255 0.047 rg 44 438 Td (CORE COMPETENCIES) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 44 425 Td (Analytical & Critical Thinking  *  Problem-Solving  *  Planning & Organization  *  Time Management  *  Communication  *  Team Collaboration  *  Attention to Detail) Tj ET
+0.5 w 0.850 0.820 0.780 RG 44 415 m 568 415 l S
+BT /F2 9 Tf 0.761 0.255 0.047 rg 44 401 Td (ACADEMIC PROJECTS) Tj ET
+BT /F2 9 Tf 0.100 0.090 0.070 rg 44 388 Td (YTOptimizer Track Pro: QR-Integrated and GPS Parcel Tracking with Geofence Security) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 450 388 Td (Adviser: Prof. Laura Llarena) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 52 377 Td (- Cross-platform web dispatch & native Android courier ecosystem with 10-hub Bulacan geofence tracking and 20m doorstep POD.) Tj ET
+BT /F2 9 Tf 0.100 0.090 0.070 rg 44 364 Td (Slime Food Drop - 120 FPS Unity 2D Mobile Arcade Game) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 435 364 Td (Adviser: Prof. Marvin Santos, MSIT) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 52 353 Td (- Physics-driven Android portrait arcade game featuring Bloop the Slime, dynamic squash/stretch physics, and 10 handcrafted stages.) Tj ET
+BT /F2 9 Tf 0.100 0.090 0.070 rg 44 340 Td (Hagonoy GroundWatch - Civic Geospatial Telemetry Platform) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 465 340 Td (Final Course Output \(70%\)) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 52 329 Td (- Open-source environmental InSAR subsidence tracker with interactive Leaflet GIS map, 26-barangay reporting, and stress simulator.) Tj ET
+BT /F2 9 Tf 0.100 0.090 0.070 rg 44 316 Td (HagmaVenture: App Guide for Tourist and Historical Places of Hagonoy and Malolos) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 435 316 Td (Adviser: Prof. Marvin Santos, MSIT) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 52 305 Td (- Mobile tourism guide cataloging heritage sites and route navigation for Bulacan visitors.) Tj ET
+BT /F2 9 Tf 0.100 0.090 0.070 rg 44 292 Td (Asset Tracking System & Barangay Monitoring Loan Tracking System) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 440 292 Td (Adviser: Prof. / Ms. Cristel De Leon) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 52 281 Td (- Institutional hardware lifecycle audit registry and community micro-lending amortization monitoring systems.) Tj ET
+0.5 w 0.850 0.820 0.780 RG 44 271 m 568 271 l S
+BT /F2 9 Tf 0.761 0.255 0.047 rg 44 257 Td (SEMINARS, WORKSHOPS & TRAININGS ATTENDED) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 244 Td (Data Analytics Essential) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 210 244 Td (- Department of Information and Communications Technology \(DICT\)) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 510 244 Td (April 2026) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 232 Td (Ignite Philippines) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 210 232 Td (- Wadhwani Foundation \(Entrepreneurship & Employability Readiness\)) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 510 232 Td (April 2026) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 220 Td (POSHED to Excellence: Web Dev & Career Growth) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 275 220 Td (- BulSU POSHED Developers) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 500 220 Td (February 2025) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 208 Td (Printing Troubleshooting Workshop) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 210 208 Td (- Sambalaran Workshop, Information Technology Department) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 505 208 Td (October 2023) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 196 Td (Provincial Level Press Conference Face-off) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 245 196 Td (- Department of Education - Bulacan) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 515 196 Td (May 2023) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 184 Td (Central Luzon Regional School Press Conference) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 255 184 Td (- Department of Education - Central Luzon) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 515 184 Td (May 2023) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 172 Td (Critiquing Session of School Paper Entries) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 245 172 Td (- Department of Education - Bulacan) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 510 172 Td (April 2023) Tj ET
+BT /F2 8.5 Tf 0.100 0.090 0.070 rg 44 160 Td (Communication and Writing Skills Workshop) Tj ET
+BT /F1 8.2 Tf 0.100 0.090 0.070 rg 250 160 Td (- Iba National High School, Filipino & English Dept) Tj ET
+BT /F1 8 Tf 0.370 0.340 0.300 rg 495 160 Td (September 2022) Tj ET
 endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 xref
 0 7
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000251 00000 n 
-0000000321 00000 n 
-0000000396 00000 n 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000008401 00000 n 
+0000008471 00000 n 
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-6630
+8546
 %%EOF
