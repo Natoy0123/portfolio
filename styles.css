@@ -631,6 +631,82 @@ button {
   line-height: 1.6;
 }
 
+.project-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding-top: 2px;
+}
+
+.metric-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.metric-val {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.metric-lbl {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-light);
+}
+
+.arch-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.arch-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.arch-steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.arch-step {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 500;
+  color: var(--text);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+}
+
+.arch-arrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
 .project-details {
   border-top: 1px solid var(--border-subtle);
   padding-top: 14px;
@@ -835,7 +911,7 @@ button {
   transform: translate3d(0, 0, 0) scale(1) rotateY(0deg);
   z-index: 5;
   opacity: 1;
-  cursor: default;
+  cursor: zoom-in;
 }
 
 .carousel-3d--landscape .carousel-card[data-pos="prev"] {
@@ -863,7 +939,7 @@ button {
   z-index: 5;
   opacity: 1;
   box-shadow: 0 14px 32px -8px rgba(15, 23, 42, 0.32);
-  cursor: default;
+  cursor: zoom-in;
 }
 
 .carousel-3d--portrait .carousel-card[data-pos="prev"] {
@@ -999,6 +1075,93 @@ button {
   font-size: 1.35rem;
   line-height: 1.45;
   color: var(--text);
+}
+
+/* Education & Engineering Milestones Timeline */
+.timeline-block {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.timeline-heading {
+  margin: 0 0 20px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.timeline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 2px solid var(--border);
+  margin-left: 6px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 22px;
+  padding-bottom: 24px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: var(--surface);
+  border: 2px solid var(--accent);
+}
+
+.timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.timeline-period {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.timeline-role {
+  margin: 0 0 6px;
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.timeline-desc {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.profile-card-actions {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.profile-resume-btn {
+  width: 100%;
+  justify-content: center;
 }
 
 .profile-card {
@@ -1243,6 +1406,149 @@ button {
 }
 
 /* ==========================================================================
+   FULL-SCREEN ARCHITECTURAL LIGHTBOX MODAL
+   ========================================================================== */
+
+.lightbox-modal {
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background-color: var(--surface);
+  color: var(--text);
+  width: min(94vw, 1180px);
+  max-height: 92vh;
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.45);
+}
+
+.lightbox-modal::backdrop {
+  background-color: rgba(21, 19, 16, 0.82);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.lightbox-shell {
+  display: flex;
+  flex-direction: column;
+  max-height: 92vh;
+}
+
+.lightbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.lightbox-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lightbox-counter {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  background-color: var(--accent-light);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+}
+
+.lightbox-title {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.lightbox-close {
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.lightbox-close:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.lightbox-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-alt);
+  padding: 20px 56px;
+  overflow: hidden;
+  min-height: 360px;
+}
+
+.lightbox-figure {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 76vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(25, 22, 18, 0.16);
+  background-color: rgba(255, 255, 255, 0.92);
+  color: var(--text);
+  font-size: 1.4rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.lightbox-nav:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.lightbox-nav--prev {
+  left: 12px;
+}
+
+.lightbox-nav--next {
+  right: 12px;
+}
+
+/* ==========================================================================
    RESPONSIVE DESIGN BREAKPOINTS
    ========================================================================== */
 
@@ -1382,6 +1688,14 @@ button {
 
   .profile-photo-frame {
     margin: 0 0 18px 0;
+  }
+
+  .project-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .lightbox-body {
+    padding: 12px 44px;
   }
 }
 

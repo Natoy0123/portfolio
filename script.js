@@ -182,8 +182,67 @@
     });
   }
 
-  // 5. 3D Stacked Interactive Carousels
+  // 5. 3D Stacked Interactive Carousels & Full-Screen Lightbox Inspector
   const carousels = document.querySelectorAll("[data-carousel]");
+  const lightboxModal = document.querySelector("#lightbox-modal");
+  const lightboxImg = document.querySelector("#lightbox-img");
+  const lightboxTitle = document.querySelector("#lightbox-title");
+  const lightboxCounter = document.querySelector("#lightbox-counter");
+  const lightboxClose = document.querySelector("#lightbox-close");
+  const lightboxPrev = document.querySelector("#lightbox-prev");
+  const lightboxNext = document.querySelector("#lightbox-next");
+
+  let activeLightboxController = null;
+
+  function openLightbox(controller) {
+    if (!lightboxModal || !lightboxImg) return;
+    activeLightboxController = controller;
+    controller.syncLightbox();
+    if (typeof lightboxModal.showModal === "function") {
+      if (!lightboxModal.open) lightboxModal.showModal();
+    } else {
+      lightboxModal.setAttribute("open", "");
+    }
+  }
+
+  function closeLightbox() {
+    if (!lightboxModal) return;
+    if (typeof lightboxModal.close === "function" && lightboxModal.open) {
+      lightboxModal.close();
+    } else {
+      lightboxModal.removeAttribute("open");
+    }
+    activeLightboxController = null;
+  }
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener("click", closeLightbox);
+  }
+  if (lightboxPrev) {
+    lightboxPrev.addEventListener("click", () => {
+      if (activeLightboxController) activeLightboxController.step(-1);
+    });
+  }
+  if (lightboxNext) {
+    lightboxNext.addEventListener("click", () => {
+      if (activeLightboxController) activeLightboxController.step(1);
+    });
+  }
+  if (lightboxModal) {
+    lightboxModal.addEventListener("click", (e) => {
+      if (e.target === lightboxModal) closeLightbox();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (!lightboxModal.open || !activeLightboxController) return;
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        activeLightboxController.step(-1);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        activeLightboxController.step(1);
+      }
+    });
+  }
 
   carousels.forEach((carousel) => {
     const cards = Array.from(carousel.querySelectorAll(".carousel-card"));
@@ -209,6 +268,26 @@
       return dot;
     });
 
+    const controller = {
+      step(delta) {
+        goTo(activeIndex + delta);
+      },
+      syncLightbox() {
+        if (!lightboxImg) return;
+        const currentCard = cards[activeIndex];
+        const imgEl = currentCard ? currentCard.querySelector("img") : null;
+        if (!imgEl) return;
+        lightboxImg.src = imgEl.getAttribute("src") || "";
+        lightboxImg.alt = imgEl.getAttribute("alt") || "";
+        if (lightboxCounter) {
+          lightboxCounter.textContent = `${activeIndex + 1} / ${total}`;
+        }
+        if (lightboxTitle) {
+          lightboxTitle.textContent = currentCard.dataset.caption || "Project Screenshot";
+        }
+      },
+    };
+
     function updatePositions() {
       cards.forEach((card, i) => {
         const diff = (i - activeIndex + total) % total;
@@ -231,6 +310,10 @@
         const label = cards[activeIndex].dataset.caption || "";
         captionEl.textContent = `${activeIndex + 1} / ${total} — ${label}`;
       }
+
+      if (activeLightboxController === controller && lightboxModal && lightboxModal.open) {
+        controller.syncLightbox();
+      }
     }
 
     function goTo(index) {
@@ -252,12 +335,25 @@
       }
     });
 
-    // Clicking a side/back card spins the carousel to that card
+    // Clicking a side/back card spins the carousel; clicking the active card opens the full-screen lightbox
     cards.forEach((card, i) => {
       card.addEventListener("click", () => {
-        if (i !== activeIndex) goTo(i);
+        if (i !== activeIndex) {
+          goTo(i);
+        } else {
+          openLightbox(controller);
+        }
       });
     });
+
+    // Wire "Inspect Full-Screen UI" button inside the parent project card if present
+    const parentArticle = carousel.closest(".project-card");
+    if (parentArticle) {
+      const inspectBtn = parentArticle.querySelector("[data-inspect-project]");
+      if (inspectBtn) {
+        inspectBtn.addEventListener("click", () => openLightbox(controller));
+      }
+    }
 
     // Touch swipe support (ignores vertical page scroll)
     let touchStartX = 0;

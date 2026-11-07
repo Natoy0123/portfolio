@@ -1,0 +1,86 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 6182 >>
+stream
+0.761 0.255 0.047 rg 0 786 612 6 re f
+BT /F2 20 Tf 0.098 0.086 0.071 rg 48 742 Td (PATRICK FROILAN S. DEL AYRE) Tj ET
+BT /F1 11 Tf 0.761 0.255 0.047 rg 48 724 Td (Full-Stack Web, Native Android & Unity 2D Game Developer) Tj ET
+BT /F1 9.5 Tf 0.370 0.340 0.300 rg 48 708 Td (Calumpit, Bulacan, Philippines  |  patrickdelayre30@gmail.com  |  github.com/Natoy0123) Tj ET
+0.8 w 0.850 0.820 0.780 RG 48 694 m 564 694 l S
+BT /F2 9.5 Tf 0.761 0.255 0.047 rg 48 676 Td (PROFESSIONAL SUMMARY) Tj ET
+BT /F1 9.5 Tf 0.100 0.090 0.070 rg 48 661 Td (Senior BS Information Technology student \(BSIT 4A-G1\) at Bulacan State University specializing in end-to-end) Tj ET
+BT /F1 9.5 Tf 0.100 0.090 0.070 rg 48 648 Td (software engineering across React 19 web platforms, native Java Android applications, Node.js/Express REST APIs,) Tj ET
+BT /F1 9.5 Tf 0.100 0.090 0.070 rg 48 635 Td (real-time geospatial telemetry \(Leaflet/MapLibre\), and 120 FPS Unity 6 2D mobile games.) Tj ET
+0.6 w 0.850 0.820 0.780 RG 48 622 m 564 622 l S
+BT /F2 9.5 Tf 0.761 0.255 0.047 rg 48 604 Td (TECHNICAL SKILLS) Tj ET
+BT /F2 9.5 Tf 0.100 0.090 0.070 rg 48 589 Td (Languages:) Tj ET
+BT /F1 9.5 Tf 0.100 0.090 0.070 rg 135 589 Td (Java \(Android SDK\), JavaScript \(ES6+\), C# \(Unity 6\), HTML5, CSS3, SQL) Tj ET
+BT /F2 9.5 Tf 0.100 0.090 0.070 rg 48 575 Td (Frontend & GIS:) Tj ET
+BT /F1 9.5 Tf 0.100 0.090 0.070 rg 135 575 Td (React 19, Vite, Tailwind CSS, Leaflet.js, MapLibre SDK, GeoJSON, Responsive WCAG UI) Tj ET
+BT /F2 9.5 Tf 0.100 0.090 0.070 rg 48 561 Td (Backend & Data:) Tj ET
+BT /F1 9.5 Tf 0.100 0.090 0.070 rg 135 561 Td (Node.js, Express 5, MongoDB, Mongoose, Server-Sent Events \(SSE\), JWT & OTP Auth, REST Bridge APIs) Tj ET
+BT /F2 9.5 Tf 0.100 0.090 0.070 rg 48 547 Td (Mobile & QA:) Tj ET
+BT /F1 9.5 Tf 0.100 0.090 0.070 rg 135 547 Td (Android Studio, CameraX, ZXing QR, Material Design 3, Unity IL2CPP ARM64, Git, Playwright E2E) Tj ET
+0.6 w 0.850 0.820 0.780 RG 48 534 m 564 534 l S
+BT /F2 9.5 Tf 0.761 0.255 0.047 rg 48 516 Td (FEATURED ENGINEERING PROJECTS) Tj ET
+BT /F2 10.5 Tf 0.100 0.090 0.070 rg 48 499 Td (YTO Express  -  Admin & Dispatch Web Portal \(Capstone Project\)) Tj ET
+BT /F2 9 Tf 0.370 0.340 0.300 rg 440 499 Td (2024 - 2026) Tj ET
+BT /F1 8.8 Tf 0.370 0.340 0.300 rg 48 486 Td (React 19, Vite, Tailwind CSS, Node.js, Express, MongoDB, Leaflet GIS, SSE  |  github.com/Natoy0123/yto-express-web) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 472 Td (- Engineered the central logistics command dashboard with real-time KPI progress cards, rider rankings, and PDF/CSV/XLSX exports.) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 459 Td (- Built a 10-hub Bulacan regional geofence monitor with Satellite/Geofence/Heatmap layers and live rider GPS boundary alerts.) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 446 Td (- Implemented bidirectional Bridge API sync \(syncParcel, sendStatus, YTOQR1 enterprise QR payloads\) with SSE live streaming.) Tj ET
+BT /F2 10.5 Tf 0.100 0.090 0.070 rg 48 426 Td (YTO Express  -  Courier, Seller & Tracking Mobile App \(Capstone Project\)) Tj ET
+BT /F2 9 Tf 0.370 0.340 0.300 rg 440 426 Td (2024 - 2026) Tj ET
+BT /F1 8.8 Tf 0.370 0.340 0.300 rg 48 413 Td (Java, Android SDK, MapLibre SDK, CameraX, ZXing QR, Material Design 3  |  github.com/Natoy0123/YTO-Express-App) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 399 Td (- Developed a multi-role native Android app unifying Seller 4-step pickup booking, Customer live GPS tracking, and Rider dispatch.) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 386 Td (- Integrated CameraX + ZXing high-speed waybill QR scanning and MapLibre turn-by-turn route polylines across Bulacan hubs.) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 373 Td (- Enforced 10m/20m doorstep GPS geofencing before unlocking Proof of Delivery \(POD\) photo capture and digital e-receipts.) Tj ET
+BT /F2 10.5 Tf 0.100 0.090 0.070 rg 48 353 Td (Hagonoy GroundWatch  -  Civic Telemetry & Subsidence GIS Platform) Tj ET
+BT /F2 9 Tf 0.370 0.340 0.300 rg 485 353 Td (2026) Tj ET
+BT /F1 8.8 Tf 0.370 0.340 0.300 rg 48 340 Td (React 19, Vite, Tailwind CSS v4, Leaflet.js, GeoJSON, Playwright E2E  |  hagonoy-groundwatch-tik7.onrender.com) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 326 Td (- Built an open-access civic GIS platform modeling coastal land subsidence and tidal flooding across 26 Hagonoy barangays.) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 313 Td (- Created an interactive Leaflet hazard map with Critical/Severe/Moderate polygon filtering and an Aquifer Stress Simulator.) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 300 Td (- Implemented a citizen science incident reporting intake system with tracking receipts \(HGW-XXXX\) and Playwright E2E tests.) Tj ET
+BT /F2 10.5 Tf 0.100 0.090 0.070 rg 48 280 Td (Slime Food Drop  -  120 FPS Unity 2D Mobile Arcade Game) Tj ET
+BT /F2 9 Tf 0.370 0.340 0.300 rg 485 280 Td (2026) Tj ET
+BT /F1 8.8 Tf 0.370 0.340 0.300 rg 48 267 Td (Unity 6 \(6000.3.0f1\), C#, Android SDK, IL2CPP ARM64, 2D Physics  |  github.com/Natoy0123/SlimeFoodDrop) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 253 Td (- Engineered a portrait 2D mobile arcade game featuring squash-and-stretch character physics and 10 handcrafted themed stages.) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 240 Td (- Optimized touch input and rendering pipeline for 120 FPS mobile displays using Unity IL2CPP ARM64 native compilation.) Tj ET
+0.6 w 0.850 0.820 0.780 RG 48 224 m 564 224 l S
+BT /F2 9.5 Tf 0.761 0.255 0.047 rg 48 206 Td (EDUCATION & ACADEMIC MILESTONES) Tj ET
+BT /F2 10.5 Tf 0.100 0.090 0.070 rg 48 189 Td (Bachelor of Science in Information Technology \(BSIT 4A-G1\)) Tj ET
+BT /F2 9 Tf 0.370 0.340 0.300 rg 430 189 Td (2023 - Present \(Senior\)) Tj ET
+BT /F1 9.5 Tf 0.370 0.340 0.300 rg 48 175 Td (Bulacan State University \(BulSU\)  -  Malolos, Bulacan, Philippines) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 160 Td (- Lead Full-Stack Web & Native Android Developer for the 2-year YTO Express Logistics Capstone System \(2024-2026\).) Tj ET
+BT /F1 9.2 Tf 0.100 0.090 0.070 rg 56 147 Td (- Relevant Coursework: Web Systems & Technologies, Mobile Application Development, Database Management, GIS Telemetry, QA.) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+6630
+%%EOF

@@ -6,9 +6,50 @@
   <title>Patrick Del Ayre — Web &amp; Mobile App Developer</title>
   <meta name="description" content="Portfolio of Patrick Del Ayre, a full-stack web and Android mobile developer based in Bulacan, Philippines.">
   <meta name="theme-color" content="#f8f6f0">
-  <meta property="og:title" content="Patrick Del Ayre — Web &amp; Mobile App Developer">
-  <meta property="og:description" content="Full-stack web applications and native Android systems, from interface design to backend APIs.">
+  <meta property="og:title" content="Patrick Del Ayre — Full-Stack Web, Android &amp; Unity 2D Developer">
+  <meta property="og:description" content="Full-stack web platforms, native Android applications, geospatial telemetry, and 120 FPS Unity 2D games.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Patrick Del Ayre — Full-Stack Web, Android &amp; Unity 2D Developer">
+  <meta name="twitter:description" content="Full-stack web platforms, native Android applications, geospatial telemetry, and 120 FPS Unity 2D games.">
+  <meta name="twitter:image" content="assets/og-preview.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Patrick Froilan S. Del Ayre",
+    "jobTitle": "Full-Stack Web & Native Android Developer",
+    "email": "mailto:patrickdelayre30@gmail.com",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Bulacan State University"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Calumpit",
+      "addressRegion": "Bulacan",
+      "addressCountry": "PH"
+    },
+    "sameAs": [
+      "https://github.com/Natoy0123"
+    ],
+    "knowsAbout": [
+      "React 19",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Java",
+      "Android SDK",
+      "MapLibre",
+      "Leaflet GIS",
+      "Unity 6",
+      "C#"
+    ]
+  }
+  </script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='4' fill='%231a1714'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='bold' fill='%23f8f6f0' text-anchor='middle'%3EPDA%3C/text%3E%3Crect x='46' y='12' width='8' height='8' rx='2' fill='%23c2410c'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -68,6 +109,7 @@
         <div class="hero-footer">
           <div class="hero-actions">
             <a class="btn btn-primary" href="#work">Explore Featured Work &darr;</a>
+            <a class="btn btn-secondary" href="assets/Patrick-Del-Ayre-Resume.pdf" download="Patrick-Del-Ayre-Resume.pdf">Download Resume (PDF)</a>
             <a class="btn btn-secondary" href="#contact">Get in Touch &rarr;</a>
           </div>
 
@@ -134,6 +176,21 @@
                   The central web command center for the YTO Express logistics ecosystem, enabling super-admins and hub coordinators to oversee parcel triage, monitor active riders via live GPS, manage seller accounts, and resolve delivery disputes.
                 </p>
 
+                <div class="project-metrics" aria-label="Project scale metrics">
+                  <div class="metric-box">
+                    <span class="metric-val">10</span>
+                    <span class="metric-lbl">Bulacan Hubs Mapped</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">3 Roles</span>
+                    <span class="metric-lbl">RBAC Admin Tiers</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">Live SSE</span>
+                    <span class="metric-lbl">Bridge Event Stream</span>
+                  </div>
+                </div>
+
                 <div class="project-details">
                   <h4 class="details-heading">System Components &amp; Architecture</h4>
                   <ul class="feature-list">
@@ -144,9 +201,22 @@
                       <strong>Regional Geofence &amp; Hub Monitor:</strong> Interactive Bulacan tracking map overseeing 10 sorting hubs and branches with Satellite/Geofence/Heatmap layers, live rider callout cards, and proximity boundary alerts.
                     </li>
                     <li>
-                      <strong>Scanned Parcel Location Log &amp; Bridge API:</strong> Live coordinate intake table verifying warehouse vs. delivery-point scans (`INSIDE BOUNDARY`), backed by Node.js, Express, MongoDB, and SSE real-time updates.
+                      <strong>Scanned Parcel Location Log &amp; Bridge API:</strong> Live coordinate intake table verifying warehouse vs. delivery-point scans (<code>INSIDE BOUNDARY</code>), backed by Node.js, Express, MongoDB, and SSE real-time updates.
                     </li>
                   </ul>
+                </div>
+
+                <div class="arch-flow" aria-label="Cross-platform synchronization pipeline">
+                  <span class="arch-label">Cross-Platform Bridge Pipeline:</span>
+                  <div class="arch-steps">
+                    <span class="arch-step">Seller App Booking</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">Bridge REST Sync</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">10-Hub Geofence Triage</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">Live SSE Admin Telemetry</span>
+                  </div>
                 </div>
 
                 <div class="project-roles">
@@ -167,6 +237,24 @@
                   <span class="tech-tag">MongoDB</span>
                   <span class="tech-tag">JWT &amp; OTP</span>
                   <span class="tech-tag">Leaflet / Maps</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="https://github.com/Natoy0123/yto-express-web"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Source Code &nearr;
+                  </a>
+                  <button
+                    class="btn btn-secondary btn-sm"
+                    type="button"
+                    data-inspect-project
+                  >
+                    Inspect Full-Screen UI
+                  </button>
                 </div>
               </div>
 
@@ -214,6 +302,21 @@
                   A native Android mobile application engineered in Java that powers field operations for YTO Express—unifying merchant parcel booking, customer live GPS shipment tracking, interactive hub location, and rider delivery execution.
                 </p>
 
+                <div class="project-metrics" aria-label="Mobile application scale metrics">
+                  <div class="metric-box">
+                    <span class="metric-val">3 Apps-in-1</span>
+                    <span class="metric-lbl">Customer, Seller &amp; Rider</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">10m / 20m</span>
+                    <span class="metric-lbl">Doorstep POD Geofence</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">YTOQR1</span>
+                    <span class="metric-lbl">CameraX Waybill Protocol</span>
+                  </div>
+                </div>
+
                 <div class="project-details">
                   <h4 class="details-heading">Mobile Engineering &amp; Features</h4>
                   <ul class="feature-list">
@@ -230,6 +333,19 @@
                       <strong>In-App Real-Time Chat &amp; Notifications:</strong> Direct messaging between customers, sellers, and assigned riders with unread badges and automated SMS/push status alerts.
                     </li>
                   </ul>
+                </div>
+
+                <div class="arch-flow" aria-label="Field delivery execution pipeline">
+                  <span class="arch-label">Field Execution Pipeline:</span>
+                  <div class="arch-steps">
+                    <span class="arch-step">4-Step Parcel Booking</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">CameraX QR Scan</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">MapLibre Route GPS</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">20m Geofenced POD</span>
+                  </div>
                 </div>
 
                 <div class="project-roles">
@@ -250,6 +366,24 @@
                   <span class="tech-tag">Material Design 3</span>
                   <span class="tech-tag">REST API Client</span>
                   <span class="tech-tag">Geofencing</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="https://github.com/Natoy0123/YTO-Express-App"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Source Code &nearr;
+                  </a>
+                  <button
+                    class="btn btn-secondary btn-sm"
+                    type="button"
+                    data-inspect-project
+                  >
+                    Inspect App Screens
+                  </button>
                 </div>
               </div>
 
@@ -297,6 +431,21 @@
                   An open-access civic telemetry and environmental GIS platform addressing chronic land subsidence and sunny-day tidal flooding in Hagonoy, Bulacan. It synthesizes satellite InSAR geodesy and geological data into actionable community tools.
                 </p>
 
+                <div class="project-metrics" aria-label="Civic GIS telemetry metrics">
+                  <div class="metric-box">
+                    <span class="metric-val">26</span>
+                    <span class="metric-lbl">Barangay Corridors</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">InSAR</span>
+                    <span class="metric-lbl">Subsidence Geodesy</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">3 Tiers</span>
+                    <span class="metric-lbl">Hazard Risk Polygons</span>
+                  </div>
+                </div>
+
                 <div class="project-details">
                   <h4 class="details-heading">System Components &amp; Architecture</h4>
                   <ul class="feature-list">
@@ -338,6 +487,13 @@
                   >
                     GitHub Source Code &nearr;
                   </a>
+                  <button
+                    class="btn btn-secondary btn-sm"
+                    type="button"
+                    data-inspect-project
+                  >
+                    Inspect Full-Screen UI
+                  </button>
                 </div>
               </div>
 
@@ -385,6 +541,21 @@
                   A physics-driven 2D casual arcade mobile game built in Unity 6 for Android portrait mode. Players control Bloop the Slime, steering with responsive touch input to catch falling treats, evade hazards, trigger combo multipliers, and clear 10 handcrafted themed stages.
                 </p>
 
+                <div class="project-metrics" aria-label="Game performance metrics">
+                  <div class="metric-box">
+                    <span class="metric-val">120 FPS</span>
+                    <span class="metric-lbl">High-Refresh Target</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">10 Stages</span>
+                    <span class="metric-lbl">Handcrafted Biomes</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">IL2CPP</span>
+                    <span class="metric-lbl">Native ARM64 Build</span>
+                  </div>
+                </div>
+
                 <div class="project-details">
                   <h4 class="details-heading">Gameplay Mechanics &amp; Architecture</h4>
                   <ul class="feature-list">
@@ -415,13 +586,20 @@
 
                 <div class="project-actions">
                   <a
-                    class="btn btn-secondary btn-sm"
+                    class="btn btn-primary btn-sm"
                     href="https://github.com/Natoy0123/SlimeFoodDrop"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     GitHub Source Code &nearr;
                   </a>
+                  <button
+                    class="btn btn-secondary btn-sm"
+                    type="button"
+                    data-inspect-project
+                  >
+                    Inspect Game Screens
+                  </button>
                 </div>
               </div>
 
@@ -475,6 +653,43 @@
                 Having spent significant time engineering both logistics systems and civic environmental platforms, I prioritize software that remains dependable under real-world constraints—accessible on budget mobile devices, respectful of keyboard navigation, and clear in every label and workflow.
               </p>
             </div>
+
+            <!-- Education & Engineering Milestones Timeline -->
+            <div class="timeline-block" aria-labelledby="timeline-heading">
+              <h3 class="timeline-heading" id="timeline-heading">Education &amp; Engineering Milestones</h3>
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <div class="timeline-meta">
+                    <span class="timeline-period">2025 – 2026</span>
+                    <span class="badge badge-capstone">Senior Capstone &amp; Civic GIS</span>
+                  </div>
+                  <h4 class="timeline-role">Lead Full-Stack Web &amp; Native Android Developer</h4>
+                  <p class="timeline-desc">
+                    Architected the cross-platform Bridge API, 10-hub Bulacan geofence monitor, and 20m doorstep POD verification for the YTO Express logistics ecosystem alongside the Hagonoy GroundWatch subsidence telemetry platform and 120 FPS Unity 6 arcade build.
+                  </p>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-meta">
+                    <span class="timeline-period">2024 – 2025</span>
+                    <span class="badge badge-domain">Junior Year</span>
+                  </div>
+                  <h4 class="timeline-role">Capstone Phase 1 — System Architecture &amp; Mobile Core</h4>
+                  <p class="timeline-desc">
+                    Designed the MongoDB/Mongoose schema, JWT &amp; OTP authentication workflows, CameraX QR waybill scanner, and multi-role Android views for merchants, customers, and riders.
+                  </p>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-meta">
+                    <span class="timeline-period">2023 – Present</span>
+                    <span class="badge badge-domain">Bulacan State University</span>
+                  </div>
+                  <h4 class="timeline-role">Bachelor of Science in Information Technology (BSIT 4A-G1)</h4>
+                  <p class="timeline-desc">
+                    Focused on full-stack web systems, native Android mobile development, relational &amp; NoSQL database architecture, and automated software quality assurance.
+                  </p>
+                </li>
+              </ol>
+            </div>
           </div>
 
           <div class="about-aside">
@@ -517,6 +732,11 @@
                   <dd><span class="badge-status">Open to Internships &amp; Junior Roles</span></dd>
                 </div>
               </dl>
+              <div class="profile-card-actions">
+                <a class="btn btn-primary btn-sm profile-resume-btn" href="assets/Patrick-Del-Ayre-Resume.pdf" download="Patrick-Del-Ayre-Resume.pdf">
+                  Download Resume (PDF)
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -599,6 +819,9 @@
               <button class="btn btn-primary" type="button" id="copy-email-btn" data-email="patrickdelayre30@gmail.com">
                 <span id="copy-btn-text">Copy Email Address</span>
               </button>
+              <a class="btn btn-outline" href="assets/Patrick-Del-Ayre-Resume.pdf" download="Patrick-Del-Ayre-Resume.pdf">
+                Download Resume (PDF)
+              </a>
               <a class="btn btn-outline" href="mailto:patrickdelayre30@gmail.com">
                 Open Email Client &nearr;
               </a>
@@ -623,6 +846,28 @@
       </div>
     </section>
   </main>
+
+  <!-- Full-Screen Architectural Lightbox Modal -->
+  <dialog class="lightbox-modal" id="lightbox-modal" aria-label="Full-screen screenshot inspector">
+    <div class="lightbox-shell">
+      <header class="lightbox-header">
+        <div class="lightbox-meta">
+          <span class="lightbox-counter" id="lightbox-counter">1 / 4</span>
+          <span class="lightbox-title" id="lightbox-title">Screenshot Preview</span>
+        </div>
+        <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close full-screen preview">
+          Close [Esc]
+        </button>
+      </header>
+      <div class="lightbox-body">
+        <button class="lightbox-nav lightbox-nav--prev" type="button" id="lightbox-prev" aria-label="Previous screenshot">&#8249;</button>
+        <figure class="lightbox-figure">
+          <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        </figure>
+        <button class="lightbox-nav lightbox-nav--next" type="button" id="lightbox-next" aria-label="Next screenshot">&#8250;</button>
+      </div>
+    </div>
+  </dialog>
 
   <script src="script.js"></script>
 </body>
