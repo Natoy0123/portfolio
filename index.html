@@ -1,908 +1,850 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Patrick Del Ayre — Web &amp; Mobile App Developer</title>
-  <meta name="description" content="Portfolio of Patrick Del Ayre, a full-stack web and Android mobile developer based in Bulacan, Philippines.">
-  <meta name="theme-color" content="#f8f6f0">
-  <meta property="og:title" content="Patrick Del Ayre — Full-Stack Web, Android &amp; Unity 2D Developer">
-  <meta property="og:description" content="Full-stack web platforms, native Android applications, geospatial telemetry, and 120 FPS Unity 2D games.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og-preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Patrick Del Ayre — Full-Stack Web, Android &amp; Unity 2D Developer">
-  <meta name="twitter:description" content="Full-stack web platforms, native Android applications, geospatial telemetry, and 120 FPS Unity 2D games.">
-  <meta name="twitter:image" content="assets/og-preview.png">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Patrick Froilan S. Del Ayre",
-    "jobTitle": "Full-Stack Web & Native Android Developer",
-    "email": "mailto:patrickdelayre30@gmail.com",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Bulacan State University"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Calumpit",
-      "addressRegion": "Bulacan",
-      "addressCountry": "PH"
-    },
-    "sameAs": [
-      "https://github.com/Natoy0123"
-    ],
-    "knowsAbout": [
-      "React 19",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Java",
-      "Android SDK",
-      "MapLibre",
-      "Leaflet GIS",
-      "Unity 6",
-      "C#"
-    ]
-  }
-  </script>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='4' fill='%231a1714'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='bold' fill='%23f8f6f0' text-anchor='middle'%3EPDA%3C/text%3E%3Crect x='46' y='12' width='8' height='8' rx='2' fill='%23c2410c'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-
-  <!-- Header Navigation -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Patrick Del Ayre, back to top">
-        <span class="brand-name">
-          <span class="brand-full">Patrick Del Ayre</span>
-          <span class="brand-short">PDA</span>
-        </span>
-        <span class="brand-dot" aria-hidden="true">•</span>
-        <span class="brand-tag">Developer</span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
-        <span class="menu-label">Menu</span>
-        <span class="menu-bar" aria-hidden="true"></span>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- Hero Section -->
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <div class="hero-header">
-          <div class="hero-author-badge">
-            <img src="assets/profile.jpg" alt="Patrick Del Ayre" class="hero-avatar" width="44" height="44" fetchpriority="high" decoding="async">
-            <div class="status-pill">
-              <span class="status-dot" aria-hidden="true"></span>
-              <span>Available for Internship &amp; Junior Roles</span>
-            </div>
-          </div>
-          <span class="hero-location">Calumpit, Bulacan, PH</span>
-        </div>
-
-        <div class="hero-content">
-          <h1 class="hero-title" id="hero-title">
-            Building web systems, native mobile apps, and interactive games with clean architecture.
-          </h1>
-          <p class="hero-lead">
-            I am a 4th-year BSIT student at Bulacan State University specializing in full-stack web development, native Android applications, and interactive Unity 2D games. From user-focused interfaces to scalable REST APIs and physics-driven gameplay, I create software that solves tangible problems.
-          </p>
-        </div>
-
-        <div class="hero-footer">
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#work">Explore Featured Work &darr;</a>
-            <a class="btn btn-secondary" href="assets/Patrick-Del-Ayre-Resume.pdf" download="Patrick-Del-Ayre-Resume.pdf">Download Resume (PDF)</a>
-            <a class="btn btn-secondary" href="#contact">Get in Touch &rarr;</a>
-          </div>
-
-          <div class="hero-meta-grid">
-            <div class="meta-item">
-              <span class="meta-label">Specialization</span>
-              <span class="meta-val">Web, Mobile &amp; Game Dev</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Core Stack</span>
-              <span class="meta-val">React, Node, Java, Unity, C#</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Education</span>
-              <span class="meta-val">BSIT, BulSU (2022–2027)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Work Section -->
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Portfolio / 01</div>
-          <h2 class="section-title" id="work-title">Featured Projects</h2>
-          <p class="section-subtitle">Real-world applications built end-to-end across full-stack web platforms, native Android, and Unity game architecture.</p>
-        </div>
-
-        <!-- Category Filter Tabs -->
-        <div class="project-filter-bar" role="tablist" aria-label="Filter projects by category">
-          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">
-            <span class="filter-label">All Projects</span>
-            <span class="filter-count">4</span>
-          </button>
-          <button class="filter-btn" role="tab" aria-selected="false" data-filter="web">
-            <span class="filter-label">Web Platforms &amp; Systems</span>
-            <span class="filter-count">2</span>
-          </button>
-          <button class="filter-btn" role="tab" aria-selected="false" data-filter="mobile">
-            <span class="filter-label">Mobile Android Apps</span>
-            <span class="filter-count">1</span>
-          </button>
-          <button class="filter-btn" role="tab" aria-selected="false" data-filter="game">
-            <span class="filter-label">Game Development</span>
-            <span class="filter-count">1</span>
-          </button>
-        </div>
-
-        <div class="project-list">
-          <!-- Project 1: YTO Express Web Admin Portal -->
-          <article class="project-card" data-category="web">
-            <div class="project-grid">
-              <div class="project-info">
-                <div class="project-eyebrow">
-                  <span class="badge badge-capstone">Capstone Project</span>
-                  <span class="badge badge-domain">Web Admin &amp; Dispatch System</span>
-                  <span class="project-year">2025–2026 (Capstone 1) &amp; 2026–2027 (Capstone 2)</span>
-                </div>
-
-                <h3 class="project-title">YTO Express — Admin &amp; Dispatch Web Portal</h3>
-                <p class="project-summary">
-                  The central web command center for the YTO Express logistics ecosystem, enabling super-admins and hub coordinators to oversee parcel triage, monitor active riders via live GPS, manage seller accounts, and resolve delivery disputes.
-                </p>
-
-                <div class="project-metrics" aria-label="Project scale metrics">
-                  <div class="metric-box">
-                    <span class="metric-val">10</span>
-                    <span class="metric-lbl">Bulacan Hubs Mapped</span>
-                  </div>
-                  <div class="metric-box">
-                    <span class="metric-val">3 Roles</span>
-                    <span class="metric-lbl">RBAC Admin Tiers</span>
-                  </div>
-                  <div class="metric-box">
-                    <span class="metric-val">Live SSE</span>
-                    <span class="metric-lbl">Bridge Event Stream</span>
-                  </div>
-                </div>
-
-                <div class="project-details">
-                  <h4 class="details-heading">System Components &amp; Architecture</h4>
-                  <ul class="feature-list">
-                    <li>
-                      <strong>Super Admin Analytics Dashboard:</strong> Real-time KPI progress cards, rider performance rankings, parcel operations donut telemetry, top failed delivery reason breakdowns, and PDF/CSV/XLSX reporting.
-                    </li>
-                    <li>
-                      <strong>Regional Geofence &amp; Hub Monitor:</strong> Interactive Bulacan tracking map overseeing 10 sorting hubs and branches with Satellite/Geofence/Heatmap layers, live rider callout cards, and proximity boundary alerts.
-                    </li>
-                    <li>
-                      <strong>Scanned Parcel Location Log &amp; Bridge API:</strong> Live coordinate intake table verifying warehouse vs. delivery-point scans (<code>INSIDE BOUNDARY</code>), backed by Node.js, Express, MongoDB, and SSE real-time updates.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="arch-flow" aria-label="Cross-platform synchronization pipeline">
-                  <span class="arch-label">Cross-Platform Bridge Pipeline:</span>
-                  <div class="arch-steps">
-                    <span class="arch-step">Seller App Booking</span>
-                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
-                    <span class="arch-step">Bridge REST Sync</span>
-                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
-                    <span class="arch-step">10-Hub Geofence Triage</span>
-                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
-                    <span class="arch-step">Live SSE Admin Telemetry</span>
-                  </div>
-                </div>
-
-                <div class="project-roles">
-                  <span class="roles-label">Admin Modules:</span>
-                  <div class="role-badges">
-                    <span class="role-badge">Analytics &amp; Donut Telemetry</span>
-                    <span class="role-badge">10-Hub Geofence Monitor</span>
-                    <span class="role-badge">Scanned Location Log</span>
-                  </div>
-                </div>
-
-                <div class="project-tech">
-                  <span class="tech-tag">React 19</span>
-                  <span class="tech-tag">Vite</span>
-                  <span class="tech-tag">Tailwind CSS</span>
-                  <span class="tech-tag">Node.js</span>
-                  <span class="tech-tag">Express</span>
-                  <span class="tech-tag">MongoDB</span>
-                  <span class="tech-tag">JWT &amp; OTP</span>
-                  <span class="tech-tag">Leaflet / Maps</span>
-                </div>
-
-                <div class="project-actions">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="https://github.com/Natoy0123/yto-express-web"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub Source Code &nearr;
-                  </a>
-                  <button
-                    class="btn btn-secondary btn-sm"
-                    type="button"
-                    data-inspect-project
-                  >
-                    Inspect Full-Screen UI
-                  </button>
-                </div>
-              </div>
-
-              <div class="project-preview">
-                <div class="carousel-3d carousel-3d--landscape" data-carousel aria-label="YTO Express Web Admin Portal Screenshots">
-                  <div class="carousel-stage">
-                    <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Previous slide">&#8249;</button>
-                    <div class="carousel-track">
-                      <figure class="carousel-card" data-pos="active" data-index="0" data-caption="Super Admin Analytics Dashboard">
-                        <img src="assets/yto-web-1.webp" width="1440" height="900" alt="YTO Express Super Admin Analytics Dashboard with KPI cards and donut telemetry." fetchpriority="high" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="next" data-index="1" data-caption="Regional Geofence &amp; 10-Hub Monitor">
-                        <img src="assets/yto-web-2.webp" width="1440" height="900" alt="YTO Express Regional Geofence Monitor showing Bulacan hubs and active rider tracking." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="back" data-index="2" data-caption="Scanned Parcel Location Log">
-                        <img src="assets/yto-web-3.webp" width="1440" height="900" alt="YTO Express Manage Parcel Location table with warehouse and delivery boundary logs." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="prev" data-index="3" data-caption="Role-Gated Admin Sign-In Portal">
-                        <img src="assets/yto-web-4.webp" width="1440" height="900" alt="YTO Express Logistics Management System Admin Portal sign-in interface." loading="lazy" decoding="async">
-                      </figure>
-                    </div>
-                    <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Next slide">&#8250;</button>
-                  </div>
-                  <div class="carousel-footer">
-                    <span class="carousel-caption" aria-live="polite">1 / 4 — Super Admin Analytics Dashboard</span>
-                    <div class="carousel-dots" role="tablist" aria-label="Select slide"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2: YTO Express Mobile Application -->
-          <article class="project-card" data-category="mobile">
-            <div class="project-grid">
-              <div class="project-info">
-                <div class="project-eyebrow">
-                  <span class="badge badge-capstone">Capstone Project</span>
-                  <span class="badge badge-domain">Native Android Application</span>
-                  <span class="project-year">2025–2026 (Capstone 1) &amp; 2026–2027 (Capstone 2)</span>
-                </div>
-
-                <h3 class="project-title">YTO Express — Courier, Seller &amp; Tracking Mobile App</h3>
-                <p class="project-summary">
-                  A native Android mobile application engineered in Java that powers field operations for YTO Express—unifying merchant parcel booking, customer live GPS shipment tracking, interactive hub location, and rider delivery execution.
-                </p>
-
-                <div class="project-metrics" aria-label="Mobile application scale metrics">
-                  <div class="metric-box">
-                    <span class="metric-val">3 Apps-in-1</span>
-                    <span class="metric-lbl">Customer, Seller &amp; Rider</span>
-                  </div>
-                  <div class="metric-box">
-                    <span class="metric-val">10m / 20m</span>
-                    <span class="metric-lbl">Doorstep POD Geofence</span>
-                  </div>
-                  <div class="metric-box">
-                    <span class="metric-val">YTOQR1</span>
-                    <span class="metric-lbl">CameraX Waybill Protocol</span>
-                  </div>
-                </div>
-
-                <div class="project-details">
-                  <h4 class="details-heading">Mobile Engineering &amp; Features</h4>
-                  <ul class="feature-list">
-                    <li>
-                      <strong>MapLibre Live Route &amp; ETA Tracking:</strong> Real-time turn-by-turn route polylines, courier proximity calculation, and branch hub locator across Bulacan municipalities (Calumpit, Pulilan, Malolos, Baliuag).
-                    </li>
-                    <li>
-                      <strong>CameraX QR Waybill Scanner &amp; Booking:</strong> High-speed barcode/QR scanning for instant parcel lookup, multi-step seller pickup booking, and bulk hub drop-off sheets.
-                    </li>
-                    <li>
-                      <strong>Geofenced Proof of Delivery (POD) &amp; E-Receipts:</strong> Verifies rider arrival at the recipient's destination coordinates before unlocking camera POD capture and generating official digital delivery receipts.
-                    </li>
-                    <li>
-                      <strong>In-App Real-Time Chat &amp; Notifications:</strong> Direct messaging between customers, sellers, and assigned riders with unread badges and automated SMS/push status alerts.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="arch-flow" aria-label="Field delivery execution pipeline">
-                  <span class="arch-label">Field Execution Pipeline:</span>
-                  <div class="arch-steps">
-                    <span class="arch-step">4-Step Parcel Booking</span>
-                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
-                    <span class="arch-step">CameraX QR Scan</span>
-                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
-                    <span class="arch-step">MapLibre Route GPS</span>
-                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
-                    <span class="arch-step">20m Geofenced POD</span>
-                  </div>
-                </div>
-
-                <div class="project-roles">
-                  <span class="roles-label">Mobile Workflows:</span>
-                  <div class="role-badges">
-                    <span class="role-badge">Merchant Pickup Booking</span>
-                    <span class="role-badge">Customer Live Map Tracking</span>
-                    <span class="role-badge">Rider Geofenced POD</span>
-                  </div>
-                </div>
-
-                <div class="project-tech">
-                  <span class="tech-tag">Java</span>
-                  <span class="tech-tag">Android SDK</span>
-                  <span class="tech-tag">MapLibre SDK</span>
-                  <span class="tech-tag">CameraX</span>
-                  <span class="tech-tag">ZXing QR</span>
-                  <span class="tech-tag">Material Design 3</span>
-                  <span class="tech-tag">REST API Client</span>
-                  <span class="tech-tag">Geofencing</span>
-                </div>
-
-                <div class="project-actions">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="https://github.com/Natoy0123/YTO-Express-App"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub Source Code &nearr;
-                  </a>
-                  <button
-                    class="btn btn-secondary btn-sm"
-                    type="button"
-                    data-inspect-project
-                  >
-                    Inspect App Screens
-                  </button>
-                </div>
-              </div>
-
-              <div class="project-preview">
-                <div class="carousel-3d carousel-3d--portrait" data-carousel aria-label="YTO Express Android Mobile App Screenshots">
-                  <div class="carousel-stage">
-                    <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Previous slide">&#8249;</button>
-                    <div class="carousel-track">
-                      <figure class="carousel-card" data-pos="active" data-index="0" data-caption="App Login Screen">
-                        <img src="assets/yto-app-1.webp" width="720" height="1600" alt="YTO Express Android App Login Screen with email/phone sign-in, Google OAuth, and quick QR scan." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="next" data-index="1" data-caption="Account Registration Screen">
-                        <img src="assets/yto-app-2.webp" width="720" height="1600" alt="YTO Express Android App Create Account registration screen with role selection and PH phone formatting." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="back" data-index="2" data-caption="Home Tab &amp; Quick Actions">
-                        <img src="assets/yto-app-3.webp" width="720" height="1600" alt="YTO Express Android App Home Tab displaying tracking search, weather advisory, Book/History/Nearby Hubs actions, and shipment counters." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="prev" data-index="3" data-caption="Profile Tab &amp; Account Settings">
-                        <img src="assets/yto-app-4.webp" width="720" height="1600" alt="YTO Express Android App Profile Tab showing verified merchant badge, store rating, shipment metrics, and security settings." loading="lazy" decoding="async">
-                      </figure>
-                    </div>
-                    <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Next slide">&#8250;</button>
-                  </div>
-                  <div class="carousel-footer">
-                    <span class="carousel-caption" aria-live="polite">1 / 4 — App Login Screen</span>
-                    <div class="carousel-dots" role="tablist" aria-label="Select slide"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3: Hagonoy GroundWatch -->
-          <article class="project-card" data-category="web">
-            <div class="project-grid">
-              <div class="project-info">
-                <div class="project-eyebrow">
-                  <span class="badge badge-live">Live Web Platform</span>
-                  <span class="badge badge-domain">Civic Telemetry &amp; GIS</span>
-                  <span class="project-year">2026</span>
-                </div>
-
-                <h3 class="project-title">Hagonoy GroundWatch</h3>
-                <p class="project-summary">
-                  An open-access civic telemetry and environmental GIS platform addressing chronic land subsidence and sunny-day tidal flooding in Hagonoy, Bulacan. It synthesizes satellite InSAR geodesy and geological data into actionable community tools.
-                </p>
-
-                <div class="project-metrics" aria-label="Civic GIS telemetry metrics">
-                  <div class="metric-box">
-                    <span class="metric-val">26</span>
-                    <span class="metric-lbl">Barangay Corridors</span>
-                  </div>
-                  <div class="metric-box">
-                    <span class="metric-val">InSAR</span>
-                    <span class="metric-lbl">Subsidence Geodesy</span>
-                  </div>
-                  <div class="metric-box">
-                    <span class="metric-val">3 Tiers</span>
-                    <span class="metric-lbl">Hazard Risk Polygons</span>
-                  </div>
-                </div>
-
-                <div class="project-details">
-                  <h4 class="details-heading">System Components &amp; Architecture</h4>
-                  <ul class="feature-list">
-                    <li>
-                      <strong>Interactive Geospatial Hazard Map:</strong> Powered by Leaflet.js with custom GeoJSON polygon corridors, multi-tier risk filtering (Critical, Severe, Moderate), fly-to zoom controls, and sector geological dossiers.
-                    </li>
-                    <li>
-                      <strong>Aquifer Stress Simulator:</strong> Mathematical model computing annual subsidence rates (cm/yr) and one-meter subsidence timelines based on groundwater overdraft parameters.
-                    </li>
-                    <li>
-                      <strong>Citizen Science Incident Reporting:</strong> In-browser intake form with local data persistence, interactive confirmation dialogs, tracking receipts (HGW-XXXX), and a live observation feed.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="project-tech">
-                  <span class="tech-tag">React 19</span>
-                  <span class="tech-tag">Vite</span>
-                  <span class="tech-tag">Tailwind CSS v4</span>
-                  <span class="tech-tag">Leaflet.js</span>
-                  <span class="tech-tag">GeoJSON</span>
-                  <span class="tech-tag">Playwright E2E</span>
-                </div>
-
-                <div class="project-actions">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="https://hagonoy-groundwatch-tik7.onrender.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Live Deployment &nearr;
-                  </a>
-                  <a
-                    class="btn btn-secondary btn-sm"
-                    href="https://github.com/Natoy0123/hagonoy-groundwatch"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub Source Code &nearr;
-                  </a>
-                  <button
-                    class="btn btn-secondary btn-sm"
-                    type="button"
-                    data-inspect-project
-                  >
-                    Inspect Full-Screen UI
-                  </button>
-                </div>
-              </div>
-
-              <div class="project-preview">
-                <div class="carousel-3d carousel-3d--landscape" data-carousel aria-label="Hagonoy GroundWatch Platform Screenshots">
-                  <div class="carousel-stage">
-                    <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Previous slide">&#8249;</button>
-                    <div class="carousel-track">
-                      <figure class="carousel-card" data-pos="active" data-index="0" data-caption="Hero &amp; Subsidence Telemetry Overview">
-                        <img src="assets/groundwatch-1.webp" width="1440" height="900" alt="Hagonoy GroundWatch hero section showing peak subsidence rate and ground zero vulnerability summary." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="next" data-index="1" data-caption="Interactive Geospatial Hazard Map">
-                        <img src="assets/groundwatch-2.webp" width="1440" height="900" alt="Hagonoy Subsidence and Vulnerability Hazard Map with GeoJSON polygon corridor and Barangay Pugad dossier." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="back" data-index="2" data-caption="Aquifer Stress &amp; Impact Simulator">
-                        <img src="assets/groundwatch-3.webp" width="1440" height="900" alt="Aquifer Stress Calculator simulating groundwater extraction parameters and annual land subsidence." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="prev" data-index="3" data-caption="Citizen Telemetry &amp; Incident Intake">
-                        <img src="assets/groundwatch-4.webp" width="1440" height="900" alt="Citizen Telemetry and Incident Ingestion portal with live ground-truth barangay logs." loading="lazy" decoding="async">
-                      </figure>
-                    </div>
-                    <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Next slide">&#8250;</button>
-                  </div>
-                  <div class="carousel-footer">
-                    <span class="carousel-caption" aria-live="polite">1 / 4 — Hero &amp; Subsidence Telemetry Overview</span>
-                    <div class="carousel-dots" role="tablist" aria-label="Select slide"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4: Slime Food Drop -->
-          <article class="project-card" data-category="game">
-            <div class="project-grid">
-              <div class="project-info">
-                <div class="project-eyebrow">
-                  <span class="badge badge-game">Unity 2D Game</span>
-                  <span class="badge badge-domain">Mobile Arcade / Android</span>
-                  <span class="project-year">2026</span>
-                </div>
-
-                <h3 class="project-title">Slime Food Drop</h3>
-                <p class="project-summary">
-                  A physics-driven 2D casual arcade mobile game built in Unity 6 for Android portrait mode. Players control Bloop the Slime, steering with responsive touch input to catch falling treats, evade hazards, trigger combo multipliers, and clear 10 handcrafted themed stages.
-                </p>
-
-                <div class="project-metrics" aria-label="Game performance metrics">
-                  <div class="metric-box">
-                    <span class="metric-val">120 FPS</span>
-                    <span class="metric-lbl">High-Refresh Target</span>
-                  </div>
-                  <div class="metric-box">
-                    <span class="metric-val">10 Stages</span>
-                    <span class="metric-lbl">Handcrafted Biomes</span>
-                  </div>
-                  <div class="metric-box">
-                    <span class="metric-val">IL2CPP</span>
-                    <span class="metric-lbl">Native ARM64 Build</span>
-                  </div>
-                </div>
-
-                <div class="project-details">
-                  <h4 class="details-heading">Gameplay Mechanics &amp; Architecture</h4>
-                  <ul class="feature-list">
-                    <li>
-                      <strong>Physics &amp; Character Juice:</strong> Dynamic squash-and-stretch body deformation, contact shadow morphing, mouth eating animations synchronized with food impact, and spring-physics button juice.
-                    </li>
-                    <li>
-                      <strong>10 Handcrafted Themed Stages:</strong> Distinct environments ranging from Whispering Forest to Frost Citadel, featuring unique color palettes, difficulty curves, and high-resolution portrait pixel backdrops.
-                    </li>
-                    <li>
-                      <strong>120 FPS High-Refresh Optimization:</strong> Engineered for fluid input response on high-refresh mobile screens, compiled with Unity IL2CPP ARM64 for native execution.
-                    </li>
-                    <li>
-                      <strong>Procedural Scene &amp; Tooling:</strong> Automated scene layout generator (<code>BuildMainGameScene.cs</code>), item drop sequencing, and local score persistence via PlayerPrefs.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="project-tech">
-                  <span class="tech-tag">Unity 6 (6000.3.0f1)</span>
-                  <span class="tech-tag">C#</span>
-                  <span class="tech-tag">Android SDK</span>
-                  <span class="tech-tag">IL2CPP / ARM64</span>
-                  <span class="tech-tag">2D Physics</span>
-                  <span class="tech-tag">Arcade UI</span>
-                  <span class="tech-tag">120 FPS Mode</span>
-                </div>
-
-                <div class="project-actions">
-                  <a
-                    class="btn btn-primary btn-sm"
-                    href="https://github.com/Natoy0123/SlimeFoodDrop"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub Source Code &nearr;
-                  </a>
-                  <button
-                    class="btn btn-secondary btn-sm"
-                    type="button"
-                    data-inspect-project
-                  >
-                    Inspect Game Screens
-                  </button>
-                </div>
-              </div>
-
-              <div class="project-preview">
-                <div class="carousel-3d carousel-3d--portrait" data-carousel aria-label="Slime Food Drop Unity 2D Game Screenshots">
-                  <div class="carousel-stage">
-                    <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Previous slide">&#8249;</button>
-                    <div class="carousel-track">
-                      <figure class="carousel-card" data-pos="active" data-index="0" data-caption="Title Screen &amp; Interactive Bloop">
-                        <img src="assets/slime-1.webp" width="720" height="1600" alt="Slime Food Drop title screen with Bloop the Slime and tactile arcade buttons." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="next" data-index="1" data-caption="Difficulty &amp; Stage Selection">
-                        <img src="assets/slime-2.webp" width="720" height="1600" alt="Slime Food Drop difficulty menu modal with Easy, Normal, and Hard arcade tiers." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="back" data-index="2" data-caption="Food &amp; Hazard Almanac">
-                        <img src="assets/slime-3.webp" width="720" height="1600" alt="Slime Food Drop Almanac encyclopedia showcasing collectible treats and hazards." loading="lazy" decoding="async">
-                      </figure>
-                      <figure class="carousel-card" data-pos="prev" data-index="3" data-caption="Game Over &amp; Score Summary">
-                        <img src="assets/slime-4.webp" width="720" height="1600" alt="Slime Food Drop Game Over summary modal with score and retry controls." loading="lazy" decoding="async">
-                      </figure>
-                    </div>
-                    <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Next slide">&#8250;</button>
-                  </div>
-                  <div class="carousel-footer">
-                    <span class="carousel-caption" aria-live="polite">1 / 4 — Title Screen &amp; Interactive Bloop</span>
-                    <div class="carousel-dots" role="tablist" aria-label="Select slide"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Additional Academic Projects & Systems (Without Professor Names) -->
-          <div class="academic-projects-strip" aria-labelledby="academic-more-heading">
-            <h4 class="academic-more-heading" id="academic-more-heading">Additional Academic Projects &amp; Systems</h4>
-            <div class="academic-cards-grid">
-              <div class="academic-mini-card">
-                <span class="academic-badge">Tourism &amp; Culture Guide</span>
-                <h5 class="academic-name">HagmaVenture: App Guide for Tourist and Historical Places</h5>
-                <p class="academic-summary">Interactive mobile tourism guide navigating cultural, heritage, and historical landmarks across Hagonoy and Malolos, Bulacan.</p>
-              </div>
-
-              <div class="academic-mini-card">
-                <span class="academic-badge">Enterprise Asset Management</span>
-                <h5 class="academic-name">Asset Tracking System</h5>
-                <p class="academic-summary">Centralized hardware and institutional equipment lifecycle tracking system with status audits and custody logging.</p>
-              </div>
-
-              <div class="academic-mini-card">
-                <span class="academic-badge">Civic Financial Records</span>
-                <h5 class="academic-name">Barangay Monitoring Loan Tracking System</h5>
-                <p class="academic-summary">Community loan portfolio and borrower amortization tracker designed for transparent barangay financial recording.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section section-alt" id="about" aria-labelledby="about-title">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-main">
-            <div class="section-tag">Background / 02</div>
-            <h2 class="section-title" id="about-title">Engineering with Purpose &amp; Clarity</h2>
-            <div class="prose">
-              <p class="lead-text">
-                I am an Information Technology student who bridges practical software engineering with thoughtful interface design.
-              </p>
-              <p>
-                My focus centers on full-stack application development: modular React frontends on the web, performant native Android apps on mobile, and structured Node/Express APIs backed by MongoDB on the server.
-              </p>
-              <p>
-                Having spent significant time engineering both logistics systems and civic environmental platforms, I prioritize software that remains dependable under real-world constraints—accessible on budget mobile devices, respectful of keyboard navigation, and clear in every label and workflow.
-              </p>
-            </div>
-
-            <!-- Education & Engineering Milestones Timeline -->
-            <div class="timeline-block" aria-labelledby="timeline-heading">
-              <h3 class="timeline-heading" id="timeline-heading">Educational Background &amp; Milestones</h3>
-              <ol class="timeline-list">
-                <li class="timeline-item">
-                  <div class="timeline-meta">
-                    <span class="timeline-period">2026 – 2027</span>
-                    <span class="badge badge-capstone">4th Year (Current)</span>
-                  </div>
-                  <h4 class="timeline-role">Capstone 2 (Senior Capstone) &amp; Environmental Telemetry</h4>
-                  <p class="timeline-desc">
-                    Senior year Capstone 2 full-scale deployment and testing: completed the integrated cross-platform YTO Express ecosystem (Web Admin Command Portal + Native Android Courier/Customer App with live geofencing), Hagonoy GroundWatch InSAR GIS platform, and Unity 2D mobile game architecture.
-                  </p>
-                </li>
-                <li class="timeline-item">
-                  <div class="timeline-meta">
-                    <span class="timeline-period">2025 – 2026</span>
-                    <span class="badge badge-domain">3rd Year</span>
-                  </div>
-                  <h4 class="timeline-role">Systems Analysis &amp; Design (SAD / Capstone 1)</h4>
-                  <p class="timeline-desc">
-                    Initiated Capstone 1 under the Systems Analysis and Design (SAD) course subject. Formulated comprehensive system specifications, entity relationship modeling, database architecture, UI/UX wireframing, and the foundational Bridge API synchronizer and CameraX QR prototypes.
-                  </p>
-                </li>
-                <li class="timeline-item">
-                  <div class="timeline-meta">
-                    <span class="timeline-period">2024 – 2025</span>
-                    <span class="badge badge-domain">2nd Year</span>
-                  </div>
-                  <h4 class="timeline-role">Object-Oriented Programming &amp; Database Systems</h4>
-                  <p class="timeline-desc">
-                    Mastered relational database design, SQL querying, Java OOP concepts, and full-stack web development fundamentals.
-                  </p>
-                </li>
-                <li class="timeline-item">
-                  <div class="timeline-meta">
-                    <span class="timeline-period">2022 – 2023</span>
-                    <span class="badge badge-domain">1st Year</span>
-                  </div>
-                  <h4 class="timeline-role">Bachelor of Science in Information Technology (Freshman Year)</h4>
-                  <p class="timeline-desc">
-                    Started Information Technology degree at Bulacan State University, establishing core foundations in programming, computer logic, discrete mathematics, and algorithms.
-                  </p>
-                </li>
-              </ol>
-            </div>
-          </div>
-
-          <div class="about-aside">
-            <div class="profile-card">
-              <div class="profile-photo-frame">
-                <img
-                  src="assets/profile.jpg"
-                  alt="Patrick Froilan S. Del Ayre — Professional Headshot"
-                  class="profile-photo"
-                  width="480"
-                  height="480"
-                  loading="lazy"
-                  decoding="async"
-                >
-              </div>
-              <h3 class="card-heading">Quick Profile</h3>
-              <dl class="profile-dl">
-                <div>
-                  <dt>Name</dt>
-                  <dd>Patrick Froilan S. Del Ayre</dd>
-                </div>
-                <div>
-                  <dt>Degree</dt>
-                  <dd>BS Information Technology (Senior)</dd>
-                </div>
-                <div>
-                  <dt>Institution</dt>
-                  <dd>Bulacan State University</dd>
-                </div>
-                <div>
-                  <dt>Location</dt>
-                  <dd>Calumpit, Bulacan, Philippines</dd>
-                </div>
-                <div>
-                  <dt>Primary Focus</dt>
-                  <dd>Web Platforms, Native Android, Unity 2D Games</dd>
-                </div>
-                <div>
-                  <dt>Work Status</dt>
-                  <dd><span class="badge-status">Open to Internships &amp; Junior Roles</span></dd>
-                </div>
-              </dl>
-              <div class="profile-card-actions">
-                <a class="btn btn-primary btn-sm profile-resume-btn" href="assets/Patrick-Del-Ayre-Resume.pdf" download="Patrick-Del-Ayre-Resume.pdf">
-                  Download Resume (PDF)
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Capabilities / 03</div>
-          <h2 class="section-title" id="skills-title">Technical Tooling &amp; Skills</h2>
-          <p class="section-subtitle">Core technologies, frameworks, and developer tools applied across my projects.</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3 class="skill-cat-title">Programming Languages</h3>
-            <ul class="skill-items">
-              <li><strong>Java:</strong> Android SDK, OOP architecture, concurrency</li>
-              <li><strong>C#:</strong> Unity game architecture, OOP, physics systems, LINQ</li>
-              <li><strong>JavaScript (ES6+):</strong> Modern async/await, DOM APIs, tooling</li>
-              <li><strong>HTML5 &amp; CSS3:</strong> Semantic markup, responsive flex/grid, WCAG a11y</li>
-              <li><strong>SQL:</strong> Relational schema concepts, querying, joins</li>
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="skill-cat-title">Frontend Engineering</h3>
-            <ul class="skill-items">
-              <li><strong>React 19 &amp; Vite:</strong> Component lifecycle, hooks, state management</li>
-              <li><strong>Tailwind CSS:</strong> Utility-first responsive design tokens</li>
-              <li><strong>Geospatial Libraries:</strong> Leaflet.js, MapLibre, OpenStreetMap</li>
-              <li><strong>UI/UX Design:</strong> Typographic hierarchy, wireframing, layout ergonomics</li>
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="skill-cat-title">Backend &amp; Database</h3>
-            <ul class="skill-items">
-              <li><strong>Node.js &amp; Express:</strong> RESTful API design, middleware, error handling</li>
-              <li><strong>MongoDB &amp; Mongoose:</strong> Document modeling, indexing, aggregation</li>
-              <li><strong>Authentication:</strong> JWT session tokens, OTP verification, bcrypt</li>
-              <li><strong>Storage:</strong> HTML5 Web Storage, structured JSON persistence</li>
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3 class="skill-cat-title">Mobile &amp; Game Development</h3>
-            <ul class="skill-items">
-              <li><strong>Unity 6 (2D):</strong> 2D physics, animation state machines, particle FX</li>
-              <li><strong>Game Architecture:</strong> Game loops, item spawner curves, PlayerPrefs data</li>
-              <li><strong>Android Development:</strong> Android Studio, CameraX, ZXing, IL2CPP 120 FPS</li>
-              <li><strong>DevOps &amp; QA:</strong> Git, GitHub workflows, Playwright E2E automated suites</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <div class="contact-card">
-          <div class="contact-header">
-            <div class="section-tag contact-tag">Get in Touch / 04</div>
-            <h2 class="contact-title" id="contact-title">Let's build something worthwhile together.</h2>
-            <p class="contact-subtitle">
-              I am actively seeking internship opportunities and entry-level junior developer positions. Whether you have an open role, a collaborative project, or a technical inquiry, feel free to reach out.
-            </p>
-          </div>
-
-          <div class="contact-main">
-            <div class="email-display">
-              <span class="email-label">Direct Email</span>
-              <a class="email-address" href="mailto:patrickdelayre30@gmail.com">patrickdelayre30@gmail.com</a>
-            </div>
-
-            <div class="contact-buttons">
-              <button class="btn btn-primary" type="button" id="copy-email-btn" data-email="patrickdelayre30@gmail.com">
-                <span id="copy-btn-text">Copy Email Address</span>
-              </button>
-              <a class="btn btn-outline" href="assets/Patrick-Del-Ayre-Resume.pdf" download="Patrick-Del-Ayre-Resume.pdf">
-                Download Resume (PDF)
-              </a>
-              <a class="btn btn-outline" href="mailto:patrickdelayre30@gmail.com">
-                Open Email Client &nearr;
-              </a>
-              <a class="btn btn-outline" href="https://github.com/Natoy0123" target="_blank" rel="noopener noreferrer">
-                GitHub: @Natoy0123 &nearr;
-              </a>
-            </div>
-            <p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p>
-          </div>
-        </div>
-
-        <footer class="site-footer">
-          <div class="footer-left">
-            <span>&copy; 2026 Patrick Froilan S. Del Ayre</span>
-            <span class="footer-divider">•</span>
-            <span>BSIT 4A-G1, Bulacan State University</span>
-          </div>
-          <div class="footer-right">
-            <span>Built with semantic HTML, modern CSS, and vanilla JS.</span>
-          </div>
-        </footer>
-      </div>
-    </section>
-  </main>
-
-  <!-- Full-Screen Architectural Lightbox Modal -->
-  <dialog class="lightbox-modal" id="lightbox-modal" aria-label="Full-screen screenshot inspector">
-    <div class="lightbox-shell">
-      <header class="lightbox-header">
-        <div class="lightbox-meta">
-          <span class="lightbox-counter" id="lightbox-counter">1 / 4</span>
-          <span class="lightbox-title" id="lightbox-title">Screenshot Preview</span>
-        </div>
-        <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close full-screen preview">
-          Close [Esc]
-        </button>
-      </header>
-      <div class="lightbox-body">
-        <button class="lightbox-nav lightbox-nav--prev" type="button" id="lightbox-prev" aria-label="Previous screenshot">&#8249;</button>
-        <figure class="lightbox-figure">
-          <img class="lightbox-img" id="lightbox-img" src="" alt="">
-        </figure>
-        <button class="lightbox-nav lightbox-nav--next" type="button" id="lightbox-next" aria-label="Next screenshot">&#8250;</button>
-      </div>
-    </div>
-  </dialog>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Del Ayre — Full-Stack Developer &amp; Mobile Engineer</title>
+  <meta name="description" content="Portfolio of Patrick Del Ayre, a full-stack developer and Android mobile engineer based in Bulacan, Philippines.">
+  <meta name="theme-color" content="#f8f6f0">
+  <meta property="og:title" content="Patrick Del Ayre — Full-Stack Web, Android &amp; Unity 2D Developer">
+  <meta property="og:description" content="Full-stack web platforms, native Android applications, geospatial telemetry, and 120 FPS Unity 2D games.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Patrick Del Ayre — Full-Stack Web, Android &amp; Unity 2D Developer">
+  <meta name="twitter:description" content="Full-stack web platforms, native Android applications, geospatial telemetry, and 120 FPS Unity 2D games.">
+  <meta name="twitter:image" content="assets/og-preview.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Patrick Froilan S. Del Ayre",
+    "jobTitle": "Full-Stack Web & Native Android Developer",
+    "email": "mailto:patrickdelayre30@gmail.com",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Bulacan State University"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Calumpit",
+      "addressRegion": "Bulacan",
+      "addressCountry": "PH"
+    },
+    "sameAs": [
+      "https://github.com/Natoy0123"
+    ],
+    "knowsAbout": [
+      "React 19",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Java",
+      "Android SDK",
+      "MapLibre",
+      "Leaflet GIS",
+      "Unity 6",
+      "C#"
+    ]
+  }
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='4' fill='%231a1714'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='bold' fill='%23f8f6f0' text-anchor='middle'%3EPDA%3C/text%3E%3Crect x='46' y='12' width='8' height='8' rx='2' fill='%23c2410c'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Patrick Del Ayre, back to top">
+        <span class="brand-name">
+          <span class="brand-full">Patrick Del Ayre</span>
+          <span class="brand-short">PDA</span>
+        </span>
+        <span class="brand-dot" aria-hidden="true">•</span>
+        <span class="brand-tag">Full-Stack Developer</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <span class="menu-label">Menu</span>
+        <span class="menu-bar" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary Navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-header">
+          <div class="hero-author-badge">
+            <img src="assets/profile.jpg" alt="Patrick Del Ayre" class="hero-avatar" width="44" height="44" fetchpriority="high" decoding="async">
+            <div class="status-pill">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Available for Internship &amp; Junior Roles</span>
+            </div>
+          </div>
+          <span class="hero-location">Calumpit, Bulacan, PH</span>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">
+            Full-Stack Developer building modern web systems, native mobile apps, and interactive experiences.
+          </h1>
+          <p class="hero-lead">
+            I am a Full-Stack Developer and 4th-year BSIT student at Bulacan State University specializing in end-to-end web platforms, native Android applications, and interactive Unity 2D games. From responsive React frontends to robust Node.js/Express REST APIs and physics-driven mobile software, I engineer reliable applications that solve tangible problems.
+          </p>
+        </div>
+        <div class="hero-footer">
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">Explore Featured Work &darr;</a>
+            <a class="btn btn-secondary" href="assets/Patrick-Del-Ayre-Resume.pdf" download="Patrick-Del-Ayre-Resume.pdf">Download Resume (PDF)</a>
+            <a class="btn btn-secondary" href="#contact">Get in Touch &rarr;</a>
+          </div>
+          <div class="hero-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Role</span>
+              <span class="meta-val">Full-Stack Developer</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Core Stack</span>
+              <span class="meta-val">React, Node, Java, Unity, C#</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Education</span>
+              <span class="meta-val">BSIT, BulSU (2022–2027)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work Section -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Portfolio / 01</div>
+          <h2 class="section-title" id="work-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications built end-to-end across full-stack web platforms, native Android, and Unity game architecture.</p>
+        </div>
+        <!-- Category Filter Tabs -->
+        <div class="project-filter-bar" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">
+            <span class="filter-label">All Projects</span>
+            <span class="filter-count">4</span>
+          </button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="web">
+            <span class="filter-label">Web Platforms &amp; Systems</span>
+            <span class="filter-count">2</span>
+          </button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="mobile">
+            <span class="filter-label">Mobile Android Apps</span>
+            <span class="filter-count">1</span>
+          </button>
+          <button class="filter-btn" role="tab" aria-selected="false" data-filter="game">
+            <span class="filter-label">Game Development</span>
+            <span class="filter-count">1</span>
+          </button>
+        </div>
+        <div class="project-list">
+          <!-- Project 1: YTO Express Web Admin Portal -->
+          <article class="project-card" data-category="web">
+            <div class="project-grid">
+              <div class="project-info">
+                <div class="project-eyebrow">
+                  <span class="badge badge-capstone">Capstone Project</span>
+                  <span class="badge badge-domain">Web Admin &amp; Dispatch System</span>
+                  <span class="project-year">2025–2026 (Capstone 1) &amp; 2026–2027 (Capstone 2)</span>
+                </div>
+                <h3 class="project-title">YTO Express — Admin &amp; Dispatch Web Portal</h3>
+                <p class="project-summary">
+                  The central web command center for the YTO Express logistics ecosystem, enabling super-admins and hub coordinators to oversee parcel triage, monitor active riders via live GPS, manage seller accounts, and resolve delivery disputes.
+                </p>
+                <div class="project-metrics" aria-label="Project scale metrics">
+                  <div class="metric-box">
+                    <span class="metric-val">10</span>
+                    <span class="metric-lbl">Bulacan Hubs Mapped</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">3 Roles</span>
+                    <span class="metric-lbl">RBAC Admin Tiers</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">Live SSE</span>
+                    <span class="metric-lbl">Bridge Event Stream</span>
+                  </div>
+                </div>
+                <div class="project-details">
+                  <h4 class="details-heading">System Components &amp; Architecture</h4>
+                  <ul class="feature-list">
+                    <li>
+                      <strong>Super Admin Analytics Dashboard:</strong> Real-time KPI progress cards, rider performance rankings, parcel operations donut telemetry, top failed delivery reason breakdowns, and PDF/CSV/XLSX reporting.
+                    </li>
+                    <li>
+                      <strong>Regional Geofence &amp; Hub Monitor:</strong> Interactive Bulacan tracking map overseeing 10 sorting hubs and branches with Satellite/Geofence/Heatmap layers, live rider callout cards, and proximity boundary alerts.
+                    </li>
+                    <li>
+                      <strong>Scanned Parcel Location Log &amp; Bridge API:</strong> Live coordinate intake table verifying warehouse vs. delivery-point scans (<code>INSIDE BOUNDARY</code>), backed by Node.js, Express, MongoDB, and SSE real-time updates.
+                    </li>
+                  </ul>
+                </div>
+                <div class="arch-flow" aria-label="Cross-platform synchronization pipeline">
+                  <span class="arch-label">Cross-Platform Bridge Pipeline:</span>
+                  <div class="arch-steps">
+                    <span class="arch-step">Seller App Booking</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">Bridge REST Sync</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">10-Hub Geofence Triage</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">Live SSE Admin Telemetry</span>
+                  </div>
+                </div>
+                <div class="project-roles">
+                  <span class="roles-label">Admin Modules:</span>
+                  <div class="role-badges">
+                    <span class="role-badge">Analytics &amp; Donut Telemetry</span>
+                    <span class="role-badge">10-Hub Geofence Monitor</span>
+                    <span class="role-badge">Scanned Location Log</span>
+                  </div>
+                </div>
+                <div class="project-tech">
+                  <span class="tech-tag">React 19</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">JWT &amp; OTP</span>
+                  <span class="tech-tag">Leaflet / Maps</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="https://github.com/Natoy0123/yto-express-web"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Source Code &nearr;
+                  </a>
+                  <button
+                    class="btn btn-secondary btn-sm"
+                    type="button"
+                    data-inspect-project
+                  >
+                    Inspect Full-Screen UI
+                  </button>
+                </div>
+              </div>
+              <div class="project-preview">
+                <div class="carousel-3d carousel-3d--landscape" data-carousel aria-label="YTO Express Web Admin Portal Screenshots">
+                  <div class="carousel-stage">
+                    <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Previous slide">&#8249;</button>
+                    <div class="carousel-track">
+                      <figure class="carousel-card" data-pos="active" data-index="0" data-caption="Super Admin Analytics Dashboard">
+                        <img src="assets/yto-web-1.webp" width="1440" height="900" alt="YTO Express Super Admin Analytics Dashboard with KPI cards and donut telemetry." fetchpriority="high" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="next" data-index="1" data-caption="Regional Geofence &amp; 10-Hub Monitor">
+                        <img src="assets/yto-web-2.webp" width="1440" height="900" alt="YTO Express Regional Geofence Monitor showing Bulacan hubs and active rider tracking." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="back" data-index="2" data-caption="Scanned Parcel Location Log">
+                        <img src="assets/yto-web-3.webp" width="1440" height="900" alt="YTO Express Manage Parcel Location table with warehouse and delivery boundary logs." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="prev" data-index="3" data-caption="Role-Gated Admin Sign-In Portal">
+                        <img src="assets/yto-web-4.webp" width="1440" height="900" alt="YTO Express Logistics Management System Admin Portal sign-in interface." loading="lazy" decoding="async">
+                      </figure>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Next slide">&#8250;</button>
+                  </div>
+                  <div class="carousel-footer">
+                    <span class="carousel-caption" aria-live="polite">1 / 4 — Super Admin Analytics Dashboard</span>
+                    <div class="carousel-dots" role="tablist" aria-label="Select slide"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Project 2: YTO Express Mobile Application -->
+          <article class="project-card" data-category="mobile">
+            <div class="project-grid">
+              <div class="project-info">
+                <div class="project-eyebrow">
+                  <span class="badge badge-capstone">Capstone Project</span>
+                  <span class="badge badge-domain">Native Android Application</span>
+                  <span class="project-year">2025–2026 (Capstone 1) &amp; 2026–2027 (Capstone 2)</span>
+                </div>
+                <h3 class="project-title">YTO Express — Courier, Seller &amp; Tracking Mobile App</h3>
+                <p class="project-summary">
+                  A native Android mobile application engineered in Java that powers field operations for YTO Express—unifying merchant parcel booking, customer live GPS shipment tracking, interactive hub location, and rider delivery execution.
+                </p>
+                <div class="project-metrics" aria-label="Mobile application scale metrics">
+                  <div class="metric-box">
+                    <span class="metric-val">3 Apps-in-1</span>
+                    <span class="metric-lbl">Customer, Seller &amp; Rider</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">10m / 20m</span>
+                    <span class="metric-lbl">Doorstep POD Geofence</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">YTOQR1</span>
+                    <span class="metric-lbl">CameraX Waybill Protocol</span>
+                  </div>
+                </div>
+                <div class="project-details">
+                  <h4 class="details-heading">Mobile Engineering &amp; Features</h4>
+                  <ul class="feature-list">
+                    <li>
+                      <strong>MapLibre Live Route &amp; ETA Tracking:</strong> Real-time turn-by-turn route polylines, courier proximity calculation, and branch hub locator across Bulacan municipalities (Calumpit, Pulilan, Malolos, Baliuag).
+                    </li>
+                    <li>
+                      <strong>CameraX QR Waybill Scanner &amp; Booking:</strong> High-speed barcode/QR scanning for instant parcel lookup, multi-step seller pickup booking, and bulk hub drop-off sheets.
+                    </li>
+                    <li>
+                      <strong>Geofenced Proof of Delivery (POD) &amp; E-Receipts:</strong> Verifies rider arrival at the recipient's destination coordinates before unlocking camera POD capture and generating official digital delivery receipts.
+                    </li>
+                    <li>
+                      <strong>In-App Real-Time Chat &amp; Notifications:</strong> Direct messaging between customers, sellers, and assigned riders with unread badges and automated SMS/push status alerts.
+                    </li>
+                  </ul>
+                </div>
+                <div class="arch-flow" aria-label="Field delivery execution pipeline">
+                  <span class="arch-label">Field Execution Pipeline:</span>
+                  <div class="arch-steps">
+                    <span class="arch-step">4-Step Parcel Booking</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">CameraX QR Scan</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">MapLibre Route GPS</span>
+                    <span class="arch-arrow" aria-hidden="true">&rarr;</span>
+                    <span class="arch-step">20m Geofenced POD</span>
+                  </div>
+                </div>
+                <div class="project-roles">
+                  <span class="roles-label">Mobile Workflows:</span>
+                  <div class="role-badges">
+                    <span class="role-badge">Merchant Pickup Booking</span>
+                    <span class="role-badge">Customer Live Map Tracking</span>
+                    <span class="role-badge">Rider Geofenced POD</span>
+                  </div>
+                </div>
+                <div class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Android SDK</span>
+                  <span class="tech-tag">MapLibre SDK</span>
+                  <span class="tech-tag">CameraX</span>
+                  <span class="tech-tag">ZXing QR</span>
+                  <span class="tech-tag">Material Design 3</span>
+                  <span class="tech-tag">REST API Client</span>
+                  <span class="tech-tag">Geofencing</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="https://github.com/Natoy0123/YTO-Express-App"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Source Code &nearr;
+                  </a>
+                  <button
+                    class="btn btn-secondary btn-sm"
+                    type="button"
+                    data-inspect-project
+                  >
+                    Inspect App Screens
+                  </button>
+                </div>
+              </div>
+              <div class="project-preview">
+                <div class="carousel-3d carousel-3d--portrait" data-carousel aria-label="YTO Express Android Mobile App Screenshots">
+                  <div class="carousel-stage">
+                    <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Previous slide">&#8249;</button>
+                    <div class="carousel-track">
+                      <figure class="carousel-card" data-pos="active" data-index="0" data-caption="App Login Screen">
+                        <img src="assets/yto-app-1.webp" width="720" height="1600" alt="YTO Express Android App Login Screen with email/phone sign-in, Google OAuth, and quick QR scan." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="next" data-index="1" data-caption="Account Registration Screen">
+                        <img src="assets/yto-app-2.webp" width="720" height="1600" alt="YTO Express Android App Create Account registration screen with role selection and PH phone formatting." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="back" data-index="2" data-caption="Home Tab &amp; Quick Actions">
+                        <img src="assets/yto-app-3.webp" width="720" height="1600" alt="YTO Express Android App Home Tab displaying tracking search, weather advisory, Book/History/Nearby Hubs actions, and shipment counters." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="prev" data-index="3" data-caption="Profile Tab &amp; Account Settings">
+                        <img src="assets/yto-app-4.webp" width="720" height="1600" alt="YTO Express Android App Profile Tab showing verified merchant badge, store rating, shipment metrics, and security settings." loading="lazy" decoding="async">
+                      </figure>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Next slide">&#8250;</button>
+                  </div>
+                  <div class="carousel-footer">
+                    <span class="carousel-caption" aria-live="polite">1 / 4 — App Login Screen</span>
+                    <div class="carousel-dots" role="tablist" aria-label="Select slide"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Project 3: Hagonoy GroundWatch -->
+          <article class="project-card" data-category="web">
+            <div class="project-grid">
+              <div class="project-info">
+                <div class="project-eyebrow">
+                  <span class="badge badge-live">Live Web Platform</span>
+                  <span class="badge badge-domain">Civic Telemetry &amp; GIS</span>
+                  <span class="project-year">2026</span>
+                </div>
+                <h3 class="project-title">Hagonoy GroundWatch</h3>
+                <p class="project-summary">
+                  An open-access civic telemetry and environmental GIS platform addressing chronic land subsidence and sunny-day tidal flooding in Hagonoy, Bulacan. It synthesizes satellite InSAR geodesy and geological data into actionable community tools.
+                </p>
+                <div class="project-metrics" aria-label="Civic GIS telemetry metrics">
+                  <div class="metric-box">
+                    <span class="metric-val">26</span>
+                    <span class="metric-lbl">Barangay Corridors</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">InSAR</span>
+                    <span class="metric-lbl">Subsidence Geodesy</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">3 Tiers</span>
+                    <span class="metric-lbl">Hazard Risk Polygons</span>
+                  </div>
+                </div>
+                <div class="project-details">
+                  <h4 class="details-heading">System Components &amp; Architecture</h4>
+                  <ul class="feature-list">
+                    <li>
+                      <strong>Interactive Geospatial Hazard Map:</strong> Powered by Leaflet.js with custom GeoJSON polygon corridors, multi-tier risk filtering (Critical, Severe, Moderate), fly-to zoom controls, and sector geological dossiers.
+                    </li>
+                    <li>
+                      <strong>Aquifer Stress Simulator:</strong> Mathematical model computing annual subsidence rates (cm/yr) and one-meter subsidence timelines based on groundwater overdraft parameters.
+                    </li>
+                    <li>
+                      <strong>Citizen Science Incident Reporting:</strong> In-browser intake form with local data persistence, interactive confirmation dialogs, tracking receipts (HGW-XXXX), and a live observation feed.
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-tech">
+                  <span class="tech-tag">React 19</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">Tailwind CSS v4</span>
+                  <span class="tech-tag">Leaflet.js</span>
+                  <span class="tech-tag">GeoJSON</span>
+                  <span class="tech-tag">Playwright E2E</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="https://hagonoy-groundwatch-tik7.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Live Deployment &nearr;
+                  </a>
+                  <a
+                    class="btn btn-secondary btn-sm"
+                    href="https://github.com/Natoy0123/hagonoy-groundwatch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Source Code &nearr;
+                  </a>
+                  <button
+                    class="btn btn-secondary btn-sm"
+                    type="button"
+                    data-inspect-project
+                  >
+                    Inspect Full-Screen UI
+                  </button>
+                </div>
+              </div>
+              <div class="project-preview">
+                <div class="carousel-3d carousel-3d--landscape" data-carousel aria-label="Hagonoy GroundWatch Platform Screenshots">
+                  <div class="carousel-stage">
+                    <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Previous slide">&#8249;</button>
+                    <div class="carousel-track">
+                      <figure class="carousel-card" data-pos="active" data-index="0" data-caption="Hero &amp; Subsidence Telemetry Overview">
+                        <img src="assets/groundwatch-1.webp" width="1440" height="900" alt="Hagonoy GroundWatch hero section showing peak subsidence rate and ground zero vulnerability summary." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="next" data-index="1" data-caption="Interactive Geospatial Hazard Map">
+                        <img src="assets/groundwatch-2.webp" width="1440" height="900" alt="Hagonoy Subsidence and Vulnerability Hazard Map with GeoJSON polygon corridor and Barangay Pugad dossier." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="back" data-index="2" data-caption="Aquifer Stress &amp; Impact Simulator">
+                        <img src="assets/groundwatch-3.webp" width="1440" height="900" alt="Aquifer Stress Calculator simulating groundwater extraction parameters and annual land subsidence." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="prev" data-index="3" data-caption="Citizen Telemetry &amp; Incident Intake">
+                        <img src="assets/groundwatch-4.webp" width="1440" height="900" alt="Citizen Telemetry and Incident Ingestion portal with live ground-truth barangay logs." loading="lazy" decoding="async">
+                      </figure>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Next slide">&#8250;</button>
+                  </div>
+                  <div class="carousel-footer">
+                    <span class="carousel-caption" aria-live="polite">1 / 4 — Hero &amp; Subsidence Telemetry Overview</span>
+                    <div class="carousel-dots" role="tablist" aria-label="Select slide"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Project 4: Slime Food Drop -->
+          <article class="project-card" data-category="game">
+            <div class="project-grid">
+              <div class="project-info">
+                <div class="project-eyebrow">
+                  <span class="badge badge-game">Unity 2D Game</span>
+                  <span class="badge badge-domain">Mobile Arcade / Android</span>
+                  <span class="project-year">2026</span>
+                </div>
+                <h3 class="project-title">Slime Food Drop</h3>
+                <p class="project-summary">
+                  A physics-driven 2D casual arcade mobile game built in Unity 6 for Android portrait mode. Players control Bloop the Slime, steering with responsive touch input to catch falling treats, evade hazards, trigger combo multipliers, and clear 10 handcrafted themed stages.
+                </p>
+                <div class="project-metrics" aria-label="Game performance metrics">
+                  <div class="metric-box">
+                    <span class="metric-val">120 FPS</span>
+                    <span class="metric-lbl">High-Refresh Target</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">10 Stages</span>
+                    <span class="metric-lbl">Handcrafted Biomes</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-val">IL2CPP</span>
+                    <span class="metric-lbl">Native ARM64 Build</span>
+                  </div>
+                </div>
+                <div class="project-details">
+                  <h4 class="details-heading">Gameplay Mechanics &amp; Architecture</h4>
+                  <ul class="feature-list">
+                    <li>
+                      <strong>Physics &amp; Character Juice:</strong> Dynamic squash-and-stretch body deformation, contact shadow morphing, mouth eating animations synchronized with food impact, and spring-physics button juice.
+                    </li>
+                    <li>
+                      <strong>10 Handcrafted Themed Stages:</strong> Distinct environments ranging from Whispering Forest to Frost Citadel, featuring unique color palettes, difficulty curves, and high-resolution portrait pixel backdrops.
+                    </li>
+                    <li>
+                      <strong>120 FPS High-Refresh Optimization:</strong> Engineered for fluid input response on high-refresh mobile screens, compiled with Unity IL2CPP ARM64 for native execution.
+                    </li>
+                    <li>
+                      <strong>Procedural Scene &amp; Tooling:</strong> Automated scene layout generator (<code>BuildMainGameScene.cs</code>), item drop sequencing, and local score persistence via PlayerPrefs.
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-tech">
+                  <span class="tech-tag">Unity 6 (6000.3.0f1)</span>
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">Android SDK</span>
+                  <span class="tech-tag">IL2CPP / ARM64</span>
+                  <span class="tech-tag">2D Physics</span>
+                  <span class="tech-tag">Arcade UI</span>
+                  <span class="tech-tag">120 FPS Mode</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    href="https://github.com/Natoy0123/SlimeFoodDrop"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub Source Code &nearr;
+                  </a>
+                  <button
+                    class="btn btn-secondary btn-sm"
+                    type="button"
+                    data-inspect-project
+                  >
+                    Inspect Game Screens
+                  </button>
+                </div>
+              </div>
+              <div class="project-preview">
+                <div class="carousel-3d carousel-3d--portrait" data-carousel aria-label="Slime Food Drop Unity 2D Game Screenshots">
+                  <div class="carousel-stage">
+                    <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Previous slide">&#8249;</button>
+                    <div class="carousel-track">
+                      <figure class="carousel-card" data-pos="active" data-index="0" data-caption="Title Screen &amp; Interactive Bloop">
+                        <img src="assets/slime-1.webp" width="720" height="1600" alt="Slime Food Drop title screen with Bloop the Slime and tactile arcade buttons." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="next" data-index="1" data-caption="Difficulty &amp; Stage Selection">
+                        <img src="assets/slime-2.webp" width="720" height="1600" alt="Slime Food Drop difficulty menu modal with Easy, Normal, and Hard arcade tiers." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="back" data-index="2" data-caption="Food &amp; Hazard Almanac">
+                        <img src="assets/slime-3.webp" width="720" height="1600" alt="Slime Food Drop Almanac encyclopedia showcasing collectible treats and hazards." loading="lazy" decoding="async">
+                      </figure>
+                      <figure class="carousel-card" data-pos="prev" data-index="3" data-caption="Game Over &amp; Score Summary">
+                        <img src="assets/slime-4.webp" width="720" height="1600" alt="Slime Food Drop Game Over summary modal with score and retry controls." loading="lazy" decoding="async">
+                      </figure>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Next slide">&#8250;</button>
+                  </div>
+                  <div class="carousel-footer">
+                    <span class="carousel-caption" aria-live="polite">1 / 4 — Title Screen &amp; Interactive Bloop</span>
+                    <div class="carousel-dots" role="tablist" aria-label="Select slide"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- Additional Academic Projects & Systems (Without Professor Names) -->
+          <div class="academic-projects-strip" aria-labelledby="academic-more-heading">
+            <h4 class="academic-more-heading" id="academic-more-heading">Additional Academic Projects &amp; Systems</h4>
+            <div class="academic-cards-grid">
+              <div class="academic-mini-card">
+                <span class="academic-badge">Tourism &amp; Culture Guide</span>
+                <h5 class="academic-name">HagmaVenture: App Guide for Tourist and Historical Places</h5>
+                <p class="academic-summary">Interactive mobile tourism guide navigating cultural, heritage, and historical landmarks across Hagonoy and Malolos, Bulacan.</p>
+              </div>
+              <div class="academic-mini-card">
+                <span class="academic-badge">Enterprise Asset Management</span>
+                <h5 class="academic-name">Asset Tracking System</h5>
+                <p class="academic-summary">Centralized hardware and institutional equipment lifecycle tracking system with status audits and custody logging.</p>
+              </div>
+              <div class="academic-mini-card">
+                <span class="academic-badge">Civic Financial Records</span>
+                <h5 class="academic-name">Barangay Monitoring Loan Tracking System</h5>
+                <p class="academic-summary">Community loan portfolio and borrower amortization tracker designed for transparent barangay financial recording.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-main">
+            <div class="section-tag">Background / 02</div>
+            <h2 class="section-title" id="about-title">Engineering with Purpose &amp; Clarity</h2>
+            <div class="prose">
+              <p class="lead-text">
+                I am a Full-Stack Developer and Information Technology student who bridges robust software engineering with thoughtful, human-centered interface design.
+              </p>
+              <p>
+                My focus centers on full-stack application development: modular React frontends on the web, performant native Android apps on mobile, and structured Node/Express APIs backed by MongoDB on the server.
+              </p>
+              <p>
+                Having spent significant time engineering both logistics systems and civic environmental platforms, I prioritize software that remains dependable under real-world constraints—accessible on budget mobile devices, respectful of keyboard navigation, and clear in every label and workflow.
+              </p>
+            </div>
+            <!-- Education & Engineering Milestones Timeline -->
+            <div class="timeline-block" aria-labelledby="timeline-heading">
+              <h3 class="timeline-heading" id="timeline-heading">Educational Background &amp; Milestones</h3>
+              <ol class="timeline-list">
+                <li class="timeline-item">
+                  <div class="timeline-meta">
+                    <span class="timeline-period">2026 – 2027</span>
+                    <span class="badge badge-capstone">4th Year (Current)</span>
+                  </div>
+                  <h4 class="timeline-role">Capstone 2 (Senior Capstone) &amp; Environmental Telemetry</h4>
+                  <p class="timeline-desc">
+                    Senior year Capstone 2 full-scale deployment and testing: completed the integrated cross-platform YTO Express ecosystem (Web Admin Command Portal + Native Android Courier/Customer App with live geofencing), Hagonoy GroundWatch InSAR GIS platform, and Unity 2D mobile game architecture.
+                  </p>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-meta">
+                    <span class="timeline-period">2025 – 2026</span>
+                    <span class="badge badge-domain">3rd Year</span>
+                  </div>
+                  <h4 class="timeline-role">Systems Analysis &amp; Design (SAD / Capstone 1)</h4>
+                  <p class="timeline-desc">
+                    Initiated Capstone 1 under the Systems Analysis and Design (SAD) course subject. Formulated comprehensive system specifications, entity relationship modeling, database architecture, UI/UX wireframing, and the foundational Bridge API synchronizer and CameraX QR prototypes.
+                  </p>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-meta">
+                    <span class="timeline-period">2024 – 2025</span>
+                    <span class="badge badge-domain">2nd Year</span>
+                  </div>
+                  <h4 class="timeline-role">Object-Oriented Programming &amp; Database Systems</h4>
+                  <p class="timeline-desc">
+                    Mastered relational database design, SQL querying, Java OOP concepts, and full-stack web development fundamentals.
+                  </p>
+                </li>
+                <li class="timeline-item">
+                  <div class="timeline-meta">
+                    <span class="timeline-period">2022 – 2023</span>
+                    <span class="badge badge-domain">1st Year</span>
+                  </div>
+                  <h4 class="timeline-role">Bachelor of Science in Information Technology (Freshman Year)</h4>
+                  <p class="timeline-desc">
+                    Started Information Technology degree at Bulacan State University, establishing core foundations in programming, computer logic, discrete mathematics, and algorithms.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="about-aside">
+            <div class="profile-card">
+              <div class="profile-photo-frame">
+                <img
+                  src="assets/profile.jpg"
+                  alt="Patrick Froilan S. Del Ayre — Professional Headshot"
+                  class="profile-photo"
+                  width="480"
+                  height="480"
+                  loading="lazy"
+                  decoding="async"
+                >
+              </div>
+              <h3 class="card-heading">Quick Profile</h3>
+              <dl class="profile-dl">
+                <div>
+                  <dt>Name</dt>
+                  <dd>Patrick Froilan S. Del Ayre</dd>
+                </div>
+                <div>
+                  <dt>Degree</dt>
+                  <dd>BS Information Technology (Senior)</dd>
+                </div>
+                <div>
+                  <dt>Institution</dt>
+                  <dd>Bulacan State University</dd>
+                </div>
+                <div>
+                  <dt>Location</dt>
+                  <dd>Calumpit, Bulacan, Philippines</dd>
+                </div>
+                <div>
+                  <dt>Role &amp; Focus</dt>
+                  <dd>Full-Stack Developer (Web &amp; Mobile)</dd>
+                </div>
+                <div>
+                  <dt>Work Status</dt>
+                  <dd><span class="badge-status">Open to Internships &amp; Junior Roles</span></dd>
+                </div>
+              </dl>
+              <div class="profile-card-actions">
+                <a class="btn btn-primary btn-sm profile-resume-btn" href="assets/Patrick-Del-Ayre-Resume.pdf" download="Patrick-Del-Ayre-Resume.pdf">
+                  Download Resume (PDF)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Capabilities / 03</div>
+          <h2 class="section-title" id="skills-title">Technical Tooling &amp; Skills</h2>
+          <p class="section-subtitle">Core technologies, frameworks, and developer tools applied across my projects.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Programming Languages</h3>
+            <ul class="skill-items">
+              <li><strong>Java:</strong> Android SDK, OOP architecture, concurrency</li>
+              <li><strong>C#:</strong> Unity game architecture, OOP, physics systems, LINQ</li>
+              <li><strong>JavaScript (ES6+):</strong> Modern async/await, DOM APIs, tooling</li>
+              <li><strong>HTML5 &amp; CSS3:</strong> Semantic markup, responsive flex/grid, WCAG a11y</li>
+              <li><strong>SQL:</strong> Relational schema concepts, querying, joins</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Frontend Engineering</h3>
+            <ul class="skill-items">
+              <li><strong>React 19 &amp; Vite:</strong> Component lifecycle, hooks, state management</li>
+              <li><strong>Tailwind CSS:</strong> Utility-first responsive design tokens</li>
+              <li><strong>Geospatial Libraries:</strong> Leaflet.js, MapLibre, OpenStreetMap</li>
+              <li><strong>UI/UX Design:</strong> Typographic hierarchy, wireframing, layout ergonomics</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Backend &amp; Database</h3>
+            <ul class="skill-items">
+              <li><strong>Node.js &amp; Express:</strong> RESTful API design, middleware, error handling</li>
+              <li><strong>MongoDB &amp; Mongoose:</strong> Document modeling, indexing, aggregation</li>
+              <li><strong>Authentication:</strong> JWT session tokens, OTP verification, bcrypt</li>
+              <li><strong>Storage:</strong> HTML5 Web Storage, structured JSON persistence</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Mobile &amp; Game Development</h3>
+            <ul class="skill-items">
+              <li><strong>Unity 6 (2D):</strong> 2D physics, animation state machines, particle FX</li>
+              <li><strong>Game Architecture:</strong> Game loops, item spawner curves, PlayerPrefs data</li>
+              <li><strong>Android Development:</strong> Android Studio, CameraX, ZXing, IL2CPP 120 FPS</li>
+              <li><strong>DevOps &amp; QA:</strong> Git, GitHub workflows, Playwright E2E automated suites</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <div class="section-tag contact-tag">Get in Touch / 04</div>
+            <h2 class="contact-title" id="contact-title">Let's build something worthwhile together.</h2>
+            <p class="contact-subtitle">
+              I am actively seeking internship opportunities and entry-level junior developer positions. Whether you have an open role, a collaborative project, or a technical inquiry, feel free to reach out.
+            </p>
+          </div>
+          <div class="contact-main">
+            <div class="email-display">
+              <span class="email-label">Direct Email</span>
+              <a class="email-address" href="mailto:patrickdelayre30@gmail.com">patrickdelayre30@gmail.com</a>
+            </div>
+            <div class="contact-buttons">
+              <button class="btn btn-primary" type="button" id="copy-email-btn" data-email="patrickdelayre30@gmail.com">
+                <span id="copy-btn-text">Copy Email Address</span>
+              </button>
+              <a class="btn btn-outline" href="assets/Patrick-Del-Ayre-Resume.pdf" download="Patrick-Del-Ayre-Resume.pdf">
+                Download Resume (PDF)
+              </a>
+              <a class="btn btn-outline" href="mailto:patrickdelayre30@gmail.com">
+                Open Email Client &nearr;
+              </a>
+              <a class="btn btn-outline" href="https://github.com/Natoy0123" target="_blank" rel="noopener noreferrer">
+                GitHub: @Natoy0123 &nearr;
+              </a>
+            </div>
+            <p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+        <footer class="site-footer">
+          <div class="footer-left">
+            <span>&copy; 2026 Patrick Froilan S. Del Ayre</span>
+            <span class="footer-divider">•</span>
+            <span>BSIT 4A-G1, Bulacan State University</span>
+          </div>
+          <div class="footer-right">
+            <span>Built with semantic HTML, modern CSS, and vanilla JS.</span>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+  <!-- Full-Screen Architectural Lightbox Modal -->
+  <dialog class="lightbox-modal" id="lightbox-modal" aria-label="Full-screen screenshot inspector">
+    <div class="lightbox-shell">
+      <header class="lightbox-header">
+        <div class="lightbox-meta">
+          <span class="lightbox-counter" id="lightbox-counter">1 / 4</span>
+          <span class="lightbox-title" id="lightbox-title">Screenshot Preview</span>
+        </div>
+        <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close full-screen preview">
+          Close [Esc]
+        </button>
+      </header>
+      <div class="lightbox-body">
+        <button class="lightbox-nav lightbox-nav--prev" type="button" id="lightbox-prev" aria-label="Previous screenshot">&#8249;</button>
+        <figure class="lightbox-figure">
+          <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        </figure>
+        <button class="lightbox-nav lightbox-nav--next" type="button" id="lightbox-next" aria-label="Next screenshot">&#8250;</button>
+      </div>
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
