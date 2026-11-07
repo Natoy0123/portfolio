@@ -136,9 +136,10 @@
     sections.forEach((sec) => observer.observe(sec));
   }
 
-  // 4. Project Category Filter
+  // 4. Project Category Filter (Race-Condition Free)
   const filterButtons = document.querySelectorAll(".filter-btn");
   const projectCards = document.querySelectorAll(".project-card[data-category]");
+  const cardTimers = new WeakMap();
 
   if (filterButtons.length > 0 && projectCards.length > 0) {
     filterButtons.forEach((btn) => {
@@ -152,20 +153,29 @@
         });
 
         projectCards.forEach((card) => {
+          const prevTimer = cardTimers.get(card);
+          if (prevTimer) {
+            clearTimeout(prevTimer);
+            cardTimers.delete(card);
+          }
+
           const category = card.dataset.category;
           const shouldShow = filter === "all" || category === filter;
 
           if (shouldShow) {
             card.classList.remove("is-hidden");
-            // Allow display change to take effect before removing fade-out class
-            setTimeout(() => {
-              card.classList.remove("fade-out");
-            }, 20);
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => {
+                card.classList.remove("fade-out");
+              });
+            });
           } else {
             card.classList.add("fade-out");
-            setTimeout(() => {
+            const hideTimer = setTimeout(() => {
               card.classList.add("is-hidden");
-            }, 200);
+              cardTimers.delete(card);
+            }, 180);
+            cardTimers.set(card, hideTimer);
           }
         });
       });
@@ -231,6 +241,17 @@
     if (prevBtn) prevBtn.addEventListener("click", () => goTo(activeIndex - 1));
     if (nextBtn) nextBtn.addEventListener("click", () => goTo(activeIndex + 1));
 
+    // Keyboard Left/Right navigation when focus is inside carousel
+    carousel.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        goTo(activeIndex - 1);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        goTo(activeIndex + 1);
+      }
+    });
+
     // Clicking a side/back card spins the carousel to that card
     cards.forEach((card, i) => {
       card.addEventListener("click", () => {
@@ -238,12 +259,16 @@
       });
     });
 
-    // Touch swipe support
+    // Touch swipe support (ignores vertical page scroll)
     let touchStartX = 0;
+    let touchStartY = 0;
     carousel.addEventListener(
       "touchstart",
       (e) => {
-        if (e.touches.length > 0) touchStartX = e.touches[0].clientX;
+        if (e.touches.length > 0) {
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+        }
       },
       { passive: true }
     );
@@ -252,7 +277,8 @@
       (e) => {
         if (e.changedTouches.length > 0) {
           const deltaX = e.changedTouches[0].clientX - touchStartX;
-          if (Math.abs(deltaX) > 40) {
+          const deltaY = e.changedTouches[0].clientY - touchStartY;
+          if (Math.abs(deltaX) > 36 && Math.abs(deltaX) > Math.abs(deltaY) * 1.2) {
             goTo(deltaX < 0 ? activeIndex + 1 : activeIndex - 1);
           }
         }
