@@ -349,10 +349,11 @@ button {
 .hero-avatar {
   width: 44px;
   height: 44px;
-  border-radius: var(--radius-sm);
+  border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  border: 1px solid var(--border);
+  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 1px var(--border);
   flex-shrink: 0;
 }
 
@@ -373,7 +374,7 @@ button {
 .status-dot {
   width: 8px;
   height: 8px;
-  border-radius: 2px;
+  border-radius: 50%;
   background-color: #10b981;
   flex-shrink: 0;
 }
@@ -889,25 +890,27 @@ button {
   opacity: 0.88;
 }
 
-/* Left & Right Architectural 4px Arrows */
+/* Left & Right Subtle 4px Arrows */
 .carousel-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 8;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--border-strong);
-  background-color: var(--surface);
+  border: 1px solid rgba(25, 22, 18, 0.14);
+  background-color: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   color: var(--text);
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
   transition: background-color 0.16s ease, color 0.16s ease, border-color 0.16s ease;
 }
 
