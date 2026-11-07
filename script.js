@@ -172,7 +172,7 @@
     });
   }
 
-  // 5. 3D Rounded / Stacked Interactive Carousels
+  // 5. 3D Stacked Interactive Carousels
   const carousels = document.querySelectorAll("[data-carousel]");
 
   carousels.forEach((carousel) => {

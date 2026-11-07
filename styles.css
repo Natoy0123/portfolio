@@ -30,10 +30,10 @@
   --container-max: 1200px;
   --gutter: clamp(16px, 4vw, 36px);
   --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --shadow-sm: 0 1px 3px rgba(25, 22, 18, 0.05);
-  --shadow-md: 0 4px 12px rgba(25, 22, 18, 0.07);
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --shadow-sm: 0 1px 2px rgba(25, 22, 18, 0.04);
+  --shadow-md: 0 2px 8px rgba(25, 22, 18, 0.06);
 }
 
 /* Reset & Base Styles */
@@ -344,11 +344,10 @@ button {
 .hero-avatar {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: var(--radius-sm);
   object-fit: cover;
   object-position: center top;
-  border: 2px solid var(--surface);
-  box-shadow: 0 0 0 1px var(--border);
+  border: 1px solid var(--border);
   flex-shrink: 0;
 }
 
@@ -359,7 +358,7 @@ button {
   background-color: var(--surface);
   border: 1px solid var(--border);
   padding: 5px 12px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--text-muted);
@@ -368,9 +367,8 @@ button {
 .status-dot {
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  border-radius: 2px;
   background-color: #10b981;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
 }
 
 .hero-location {
@@ -542,7 +540,7 @@ button {
   height: 18px;
   padding: 0 5px;
   font-size: 0.7rem;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   background-color: var(--bg-alt);
   color: var(--text-muted);
 }
@@ -738,15 +736,14 @@ button {
 }
 
 /* ==========================================================================
-   3D ROUNDED / STACKED INTERACTIVE CAROUSEL
+   3D STACKED INTERACTIVE CAROUSEL
    ========================================================================== */
 
 .carousel-3d {
-  background: linear-gradient(145deg, var(--bg) 0%, var(--bg-alt) 100%);
+  background-color: var(--bg-alt);
   border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 20px 16px 16px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), var(--shadow-sm);
+  border-radius: var(--radius-sm);
+  padding: 16px 14px 14px;
   user-select: none;
 }
 
@@ -758,7 +755,9 @@ button {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg);
+  border: 1px solid var(--border-subtle);
 }
 
 .carousel-3d--landscape .carousel-stage {
@@ -769,7 +768,6 @@ button {
 .carousel-3d--portrait .carousel-stage {
   aspect-ratio: 16 / 13.5;
   padding: 16px 0;
-  background: radial-gradient(circle at 50% 45%, rgba(29, 78, 216, 0.08), transparent 72%);
 }
 
 .carousel-track {
@@ -785,11 +783,11 @@ button {
 .carousel-card {
   position: absolute;
   margin: 0;
-  border-radius: 18px;
+  border-radius: var(--radius-sm);
   overflow: hidden;
   background-color: var(--surface);
-  border: 2px solid rgba(255, 255, 255, 0.92);
-  box-shadow: 0 18px 38px -10px rgba(15, 23, 42, 0.28), 0 4px 12px rgba(15, 23, 42, 0.12);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 24px -6px rgba(15, 23, 42, 0.22), 0 2px 6px rgba(15, 23, 42, 0.1);
   transition:
     transform 0.52s cubic-bezier(0.22, 1, 0.36, 1),
     opacity 0.45s ease,
@@ -808,8 +806,8 @@ button {
   height: 92%;
   width: auto;
   aspect-ratio: 9 / 20;
-  border-radius: 22px;
-  border: 4px solid #1e1b2e;
+  border-radius: var(--radius-sm);
+  border: 2px solid #1e1b2e;
 }
 
 .carousel-card img {
@@ -857,7 +855,7 @@ button {
   z-index: 5;
   opacity: 1;
   filter: brightness(1);
-  box-shadow: 0 22px 44px -10px rgba(15, 23, 42, 0.38), 0 0 0 1px rgba(148, 163, 184, 0.25);
+  box-shadow: 0 14px 32px -8px rgba(15, 23, 42, 0.32);
   cursor: default;
 }
 
@@ -888,38 +886,36 @@ button {
   filter: brightness(0.92);
 }
 
-/* Left & Right Floating Rounded Arrows */
+/* Left & Right Architectural 4px Arrows */
 .carousel-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 8;
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background-color: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(6px);
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background-color: var(--surface);
   color: var(--text);
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.14);
-  transition: transform 0.18s ease, background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  box-shadow: var(--shadow-sm);
+  transition: background-color 0.16s ease, color 0.16s ease, border-color 0.16s ease;
 }
 
 .carousel-arrow:hover {
   background-color: var(--accent);
   border-color: var(--accent);
   color: #ffffff;
-  transform: translateY(-50%) scale(1.07);
 }
 
 .carousel-arrow:active {
-  transform: translateY(-50%) scale(0.96);
+  background-color: var(--accent-hover);
 }
 
 .carousel-arrow--prev {
@@ -930,10 +926,10 @@ button {
   right: 10px;
 }
 
-/* Footer: Caption & Dots */
+/* Footer: Caption & Indicators */
 .carousel-footer {
   margin-top: 12px;
-  padding: 6px 8px 0;
+  padding: 6px 4px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -955,19 +951,20 @@ button {
 }
 
 .carousel-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  border: 0;
+  width: 10px;
+  height: 6px;
+  border-radius: 2px;
+  border: 1px solid var(--border);
   padding: 0;
-  background-color: var(--border);
+  background-color: var(--surface);
   cursor: pointer;
-  transition: width 0.25s ease, background-color 0.25s ease;
+  transition: width 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .carousel-dot.is-active {
-  width: 22px;
+  width: 24px;
   background-color: var(--accent);
+  border-color: var(--accent);
 }
 
 /* ==========================================================================
