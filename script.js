@@ -55,7 +55,27 @@
     });
   }
 
-  // 2. Email Copy with Feedback
+  // 2. Dynamic Email Hydration & Anti-Scraper
+  function getDecodedEmail(elem) {
+    if (!elem) return "patrickdelayre30@gmail.com";
+    const user = elem.dataset.user || "patrickdelayre30";
+    const domain = elem.dataset.domain || "gmail.com";
+    return `${user}@${domain}`;
+  }
+
+  // Hydrate all dynamic email links on page
+  const dynamicEmailLinks = document.querySelectorAll(".dynamic-email-link");
+  dynamicEmailLinks.forEach((link) => {
+    const email = getDecodedEmail(link);
+    if (link.tagName === "A") {
+      link.href = `mailto:${email}`;
+      if (link.textContent.trim() === "Loading email...") {
+        link.textContent = email;
+      }
+    }
+  });
+
+  // Email Copy with Feedback
   const copyBtn = document.querySelector("#copy-email-btn");
   const copyFeedback = document.querySelector("#copy-feedback");
   const copyBtnText = document.querySelector("#copy-btn-text");
@@ -86,7 +106,7 @@
 
   if (copyBtn) {
     copyBtn.addEventListener("click", async () => {
-      const email = copyBtn.dataset.email || "patrickdelayre30@gmail.com";
+      const email = getDecodedEmail(copyBtn);
       const originalText = copyBtnText ? copyBtnText.textContent : "Copy Email Address";
 
       try {
@@ -95,13 +115,64 @@
         if (copyFeedback) copyFeedback.textContent = "Email address copied successfully.";
       } catch (err) {
         if (copyBtnText) copyBtnText.textContent = "Failed to copy";
-        if (copyFeedback) copyFeedback.textContent = "Please copy manually: patrickdelayre30@gmail.com";
+        if (copyFeedback) copyFeedback.textContent = `Please copy manually: ${email}`;
       }
 
       setTimeout(() => {
         if (copyBtnText) copyBtnText.textContent = originalText;
         if (copyFeedback) copyFeedback.textContent = "";
       }, 2500);
+    });
+  }
+
+  // 2b. Interactive Contact Form Submission Handler
+  const contactForm = document.querySelector("#contact-form");
+  const formStatus = document.querySelector("#form-status");
+  const sendBtnText = document.querySelector("#send-btn-text");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = contactForm.querySelector("#contact-name")?.value.trim();
+      const senderEmail = contactForm.querySelector("#contact-email")?.value.trim();
+      const message = contactForm.querySelector("#contact-message")?.value.trim();
+
+      if (!name || !senderEmail || !message) {
+        if (formStatus) {
+          formStatus.textContent = "Please fill in all fields before sending.";
+          formStatus.className = "form-status is-error";
+        }
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(senderEmail)) {
+        if (formStatus) {
+          formStatus.textContent = "Please provide a valid email address.";
+          formStatus.className = "form-status is-error";
+        }
+        return;
+      }
+
+      const recipient = "patrickdelayre30@gmail.com";
+      const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
+      const body = encodeURIComponent(
+        `Hi Patrick,\n\n${message}\n\n---\nSender Name: ${name}\nSender Email: ${senderEmail}`
+      );
+
+      if (sendBtnText) sendBtnText.textContent = "Opening Email Client...";
+      if (formStatus) {
+        formStatus.textContent = "Opening your email app with pre-filled details...";
+        formStatus.className = "form-status is-success";
+      }
+
+      // Launch mailto with structured payload
+      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+      setTimeout(() => {
+        if (sendBtnText) sendBtnText.textContent = "Send Message \u2192";
+        contactForm.reset();
+      }, 3500);
     });
   }
 
