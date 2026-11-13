@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Patrick Del Ayre — Full-Stack Developer &amp; Mobile Engineer</title>
   <meta name="description" content="Portfolio of Patrick Del Ayre, a full-stack developer and Android mobile engineer based in Bulacan, Philippines.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:;">
   <meta name="theme-color" content="#f8f6f0">
   <meta property="og:title" content="Patrick Del Ayre — Full-Stack Web, Android &amp; Unity 2D Developer">
   <meta property="og:description" content="Full-stack web platforms, native Android applications, geospatial telemetry, and 120 FPS Unity 2D games.">
@@ -21,8 +22,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Patrick Froilan S. Del Ayre",
-    "jobTitle": "Full-Stack Web & Native Android Developer",
-    "email": "mailto:patrickdelayre30@gmail.com",
+    "jobTitle": "Full-Stack Developer & Mobile Engineer",
     "alumniOf": {
       "@type": "CollegeOrUniversity",
       "name": "Bulacan State University"
@@ -133,24 +133,24 @@
         </div>
         <!-- Category Filter Tabs -->
         <div class="project-filter-bar" role="tablist" aria-label="Filter projects by category">
-          <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">
+          <button class="filter-btn active" role="tab" aria-selected="true" aria-controls="project-list" tabindex="0" data-filter="all">
             <span class="filter-label">All Projects</span>
             <span class="filter-count">4</span>
           </button>
-          <button class="filter-btn" role="tab" aria-selected="false" data-filter="web">
+          <button class="filter-btn" role="tab" aria-selected="false" aria-controls="project-list" tabindex="-1" data-filter="web">
             <span class="filter-label">Web Platforms &amp; Systems</span>
             <span class="filter-count">2</span>
           </button>
-          <button class="filter-btn" role="tab" aria-selected="false" data-filter="mobile">
+          <button class="filter-btn" role="tab" aria-selected="false" aria-controls="project-list" tabindex="-1" data-filter="mobile">
             <span class="filter-label">Mobile Android Apps</span>
             <span class="filter-count">1</span>
           </button>
-          <button class="filter-btn" role="tab" aria-selected="false" data-filter="game">
+          <button class="filter-btn" role="tab" aria-selected="false" aria-controls="project-list" tabindex="-1" data-filter="game">
             <span class="filter-label">Game Development</span>
             <span class="filter-count">1</span>
           </button>
         </div>
-        <div class="project-list">
+        <div class="project-list" id="project-list">
           <!-- Project 1: YTO Express Web Admin Portal -->
           <article class="project-card" data-category="web">
             <div class="project-grid">
@@ -796,7 +796,7 @@
             </div>
 
             <!-- Integrated Contact Form -->
-            <form class="contact-form" id="contact-form" novalidate>
+            <form class="contact-form" id="contact-form" data-user="patrickdelayre30" data-domain="gmail.com" novalidate>
               <div class="form-grid">
                 <div class="form-group">
                   <label for="contact-name" class="form-label">Your Name</label>

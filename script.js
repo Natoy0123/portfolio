@@ -47,20 +47,24 @@
       }
     });
 
-    // Auto close on window resize past tablet breakpoint
+    // Auto close on window resize past tablet breakpoint (rAF-throttled)
+    let resizeRaf = 0;
     window.addEventListener("resize", () => {
-      if (window.innerWidth > 768 && siteNav.classList.contains("is-open")) {
-        setNavOpen(false);
-      }
+      if (resizeRaf) return;
+      resizeRaf = requestAnimationFrame(() => {
+        resizeRaf = 0;
+        if (window.innerWidth > 768 && siteNav.classList.contains("is-open")) {
+          setNavOpen(false);
+        }
+      });
     });
   }
 
   // 2. Dynamic Email Hydration & Anti-Scraper
   function getDecodedEmail(elem) {
-    if (!elem) return "patrickdelayre30@gmail.com";
-    const user = elem.dataset.user || "patrickdelayre30";
-    const domain = elem.dataset.domain || "gmail.com";
-    return `${user}@${domain}`;
+    if (!elem) return "";
+    const { user, domain } = elem.dataset;
+    return user && domain ? `${user}@${domain}` : "";
   }
 
   // Hydrate all dynamic email links on page
@@ -154,7 +158,8 @@
         return;
       }
 
-      const recipient = "patrickdelayre30@gmail.com";
+      const recipient = getDecodedEmail(contactForm);
+      if (!recipient) return;
       const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
       const body = encodeURIComponent(
         `Hi Patrick,\n\n${message}\n\n---\nSender Name: ${name}\nSender Email: ${senderEmail}`
@@ -162,7 +167,7 @@
 
       if (sendBtnText) sendBtnText.textContent = "Opening Email Client...";
       if (formStatus) {
-        formStatus.textContent = "Opening your email app with pre-filled details...";
+        formStatus.textContent = "Opening your email app with pre-filled details. If it does not open, use Copy Email Address below.";
         formStatus.className = "form-status is-success";
       }
 
@@ -171,8 +176,7 @@
 
       setTimeout(() => {
         if (sendBtnText) sendBtnText.textContent = "Send Message \u2192";
-        contactForm.reset();
-      }, 3500);
+      }, 2500);
     });
   }
 
@@ -213,42 +217,61 @@
   const cardTimers = new WeakMap();
 
   if (filterButtons.length > 0 && projectCards.length > 0) {
-    filterButtons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const filter = btn.dataset.filter;
+    const filterList = Array.from(filterButtons);
 
-        filterButtons.forEach((b) => {
-          const isActive = b === btn;
-          b.classList.toggle("active", isActive);
-          b.setAttribute("aria-selected", String(isActive));
-        });
+    function activateFilter(btn) {
+      const filter = btn.dataset.filter;
 
-        projectCards.forEach((card) => {
-          const prevTimer = cardTimers.get(card);
-          if (prevTimer) {
-            clearTimeout(prevTimer);
-            cardTimers.delete(card);
-          }
+      filterList.forEach((b) => {
+        const isActive = b === btn;
+        b.classList.toggle("active", isActive);
+        b.setAttribute("aria-selected", String(isActive));
+        b.setAttribute("tabindex", isActive ? "0" : "-1");
+      });
 
-          const category = card.dataset.category;
-          const shouldShow = filter === "all" || category === filter;
+      projectCards.forEach((card) => {
+        const prevTimer = cardTimers.get(card);
+        if (prevTimer) {
+          clearTimeout(prevTimer);
+          cardTimers.delete(card);
+        }
 
-          if (shouldShow) {
-            card.classList.remove("is-hidden");
+        const category = card.dataset.category;
+        const shouldShow = filter === "all" || category === filter;
+
+        if (shouldShow) {
+          card.classList.remove("is-hidden");
+          requestAnimationFrame(() => {
             requestAnimationFrame(() => {
-              requestAnimationFrame(() => {
-                card.classList.remove("fade-out");
-              });
+              card.classList.remove("fade-out");
             });
-          } else {
-            card.classList.add("fade-out");
-            const hideTimer = setTimeout(() => {
-              card.classList.add("is-hidden");
-              cardTimers.delete(card);
-            }, 180);
-            cardTimers.set(card, hideTimer);
-          }
-        });
+          });
+        } else {
+          card.classList.add("fade-out");
+          const hideTimer = setTimeout(() => {
+            card.classList.add("is-hidden");
+            cardTimers.delete(card);
+          }, 180);
+          cardTimers.set(card, hideTimer);
+        }
+      });
+    }
+
+    filterList.forEach((btn, idx) => {
+      btn.addEventListener("click", () => activateFilter(btn));
+      btn.addEventListener("keydown", (e) => {
+        let nextIdx = -1;
+        if (e.key === "ArrowRight") nextIdx = (idx + 1) % filterList.length;
+        else if (e.key === "ArrowLeft") nextIdx = (idx - 1 + filterList.length) % filterList.length;
+        else if (e.key === "Home") nextIdx = 0;
+        else if (e.key === "End") nextIdx = filterList.length - 1;
+
+        if (nextIdx !== -1) {
+          e.preventDefault();
+          const targetBtn = filterList[nextIdx];
+          activateFilter(targetBtn);
+          targetBtn.focus();
+        }
       });
     });
   }
@@ -334,10 +357,31 @@
       dot.setAttribute("role", "tab");
       dot.setAttribute("aria-label", `Slide ${i + 1}: ${card.dataset.caption || ""}`);
       dot.setAttribute("aria-selected", String(i === 0));
+      dot.tabIndex = i === 0 ? 0 : -1;
       dot.addEventListener("click", () => goTo(i));
       if (dotsContainer) dotsContainer.appendChild(dot);
       return dot;
     });
+
+    if (dotsContainer) {
+      dotsContainer.addEventListener("keydown", (e) => {
+        const currentDotIndex = dots.indexOf(document.activeElement);
+        if (currentDotIndex === -1) return;
+
+        let targetIndex = null;
+        if (e.key === "ArrowRight") targetIndex = (currentDotIndex + 1) % total;
+        else if (e.key === "ArrowLeft") targetIndex = (currentDotIndex - 1 + total) % total;
+        else if (e.key === "Home") targetIndex = 0;
+        else if (e.key === "End") targetIndex = total - 1;
+
+        if (targetIndex !== null) {
+          e.preventDefault();
+          e.stopPropagation();
+          goTo(targetIndex);
+          dots[targetIndex].focus();
+        }
+      });
+    }
 
     const controller = {
       step(delta) {
@@ -367,14 +411,19 @@
         else if (diff === 1) pos = "next";
         else if (diff === total - 1) pos = "prev";
 
+        const isActive = pos === "active";
+        const label = card.dataset.caption || `Slide ${i + 1}`;
         card.setAttribute("data-pos", pos);
-        card.setAttribute("aria-hidden", String(pos !== "active"));
+        card.setAttribute("aria-hidden", String(!isActive));
+        card.tabIndex = isActive ? 0 : -1;
+        card.setAttribute("aria-label", isActive ? `Inspect ${label}` : `Show ${label}`);
       });
 
       dots.forEach((dot, i) => {
         const isActive = i === activeIndex;
         dot.classList.toggle("is-active", isActive);
         dot.setAttribute("aria-selected", String(isActive));
+        dot.tabIndex = isActive ? 0 : -1;
       });
 
       if (captionEl) {
@@ -406,13 +455,21 @@
       }
     });
 
-    // Clicking a side/back card spins the carousel; clicking the active card opens the full-screen lightbox
+    // Clicking or pressing Enter/Space on a side/back card spins the carousel; on the active card opens the lightbox
     cards.forEach((card, i) => {
-      card.addEventListener("click", () => {
+      card.setAttribute("role", "button");
+      const activateCard = () => {
         if (i !== activeIndex) {
           goTo(i);
         } else {
           openLightbox(controller);
+        }
+      };
+      card.addEventListener("click", activateCard);
+      card.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          activateCard();
         }
       });
     });
