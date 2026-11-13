@@ -595,6 +595,10 @@ button {
   align-items: start;
 }
 
+.project-grid--single {
+  grid-template-columns: 1fr;
+}
+
 .project-info {
   display: flex;
   flex-direction: column;
