@@ -1,0 +1,45 @@
+PATRICK FROILAN S. DEL AYRE
+Calumpit, Bulacan, Philippines
+patrickdelayre30@gmail.com  |  github.com/Natoy0123
+09495635655
+
+Full-Stack Developer and 4th-year BS Information Technology student specializing in modern web systems, native Android applications, geospatial telemetry, and interactive game architecture. Seeking an internship or junior developer role to engineer dependable, high-impact software solutions.
+
+EDUCATIONAL BACKGROUND
+------------------------------------------------------------
+Bulacan State University - Hagonoy Campus    2022-2027 (Current)
+Bachelor of Science in Information Technology (BSIT 4A-G1)
+
+TECHNICAL SKILLS
+------------------------------------------------------------
+- Development: Full-Stack Web (React 19, Node.js, Express), Native Android (Java, CameraX, ZXing QR)
+- Programming: Java, JavaScript (ES6+), C# (Unity 6), SQL, Python, HTML5, CSS3
+- Database: Database Design & Normalization, MongoDB, Mongoose, MySQL, PostgreSQL
+- Telemetry & GIS: Leaflet.js, MapLibre SDK, GeoJSON Polygon Corridors, InSAR Subsidence Modeling, GPS Geofencing
+- Security & Bridge: JWT Auth, OTP Verification, bcrypt, REST API Bridge Pipelines, Server-Sent Events (SSE)
+- Project Management: Agile Methodologies, Sprint Planning, Jira, Trello, Git/GitHub Workflows
+- Tools & Quality: Android Studio, Unity Engine, VS Code, Git, Playwright E2E Automated Testing, Debugging
+
+CORE COMPETENCIES
+------------------------------------------------------------
+- Full-Stack Web & Mobile Architecture
+- Real-World Problem Solving & Technical Debugging
+- Systems Analysis & Database Design
+- Cross-Platform Data Synchronization & Bridge APIs
+- Clean Code Principles & Technical Documentation
+- Attention to Detail & Agile Team Execution
+
+ACADEMIC PROJECTS
+------------------------------------------------------------
+YTO Express — Admin & Dispatch Web Portal (Capstone 1 & 2)
+  Technologies: React 19, Vite, Tailwind CSS, Node.js, Express, MongoDB, Leaflet GIS, Server-Sent Events
+YTO Express — Courier, Seller & Tracking Mobile App (Capstone 1 & 2)
+  Technologies: Native Java Android, MapLibre SDK, CameraX, ZXing QR Scanner, 20m Geofencing
+Hagonoy GroundWatch — Civic Subsidence GIS Telemetry Platform
+  Technologies: React 19, Leaflet.js, InSAR Geodesy, 26-Barangay Corridors, Playwright E2E Testing
+Slime Food Drop — 120 FPS Unity 2D Mobile Arcade Game
+  Technologies: Unity 6 (6000.3.0f1), C#, Android SDK, IL2CPP ARM64 Native Compilation, 2D Physics
+
+I hereby certify that the above information is true and correct to the basis of my knowledge.
+
+PATRICK FROILAN S. DEL AYRE

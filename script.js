@@ -60,7 +60,69 @@
     });
   }
 
-  // 2. Dynamic Email Hydration & Anti-Scraper
+  // 2. Resume format menus (PDF / DOCX / TXT / MD)
+  const dlMenus = Array.from(document.querySelectorAll(".dl"));
+
+  function setDlOpen(menu, isOpen) {
+    const toggle = menu.querySelector(".dl-toggle");
+    const panel = menu.querySelector(".dl-panel");
+    if (!toggle || !panel) return;
+
+    if (isOpen) {
+      panel.hidden = false;
+      panel.classList.remove("is-up");
+      // flip above the trigger when the panel would run past the bottom of the viewport
+      const box = panel.getBoundingClientRect();
+      if (box.bottom > window.innerHeight - 8 && box.top > 8) {
+        panel.classList.add("is-up");
+      }
+    } else {
+      panel.hidden = true;
+      panel.classList.remove("is-up");
+    }
+
+    toggle.setAttribute("aria-expanded", String(isOpen));
+  }
+
+  function closeAllDlMenus(except) {
+    dlMenus.forEach((menu) => {
+      if (menu !== except) setDlOpen(menu, false);
+    });
+  }
+
+  dlMenus.forEach((menu) => {
+    const toggle = menu.querySelector(".dl-toggle");
+    if (!toggle) return;
+
+    toggle.addEventListener("click", () => {
+      const willOpen = toggle.getAttribute("aria-expanded") !== "true";
+      closeAllDlMenus(menu);
+      setDlOpen(menu, willOpen);
+    });
+
+    // Choosing a format closes the menu
+    menu.querySelectorAll(".dl-item").forEach((item) => {
+      item.addEventListener("click", () => setDlOpen(menu, false));
+    });
+  });
+
+  if (dlMenus.length) {
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".dl")) closeAllDlMenus(null);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "Escape") return;
+      const openMenu = dlMenus.find(
+        (menu) => menu.querySelector(".dl-toggle")?.getAttribute("aria-expanded") === "true"
+      );
+      if (!openMenu) return;
+      setDlOpen(openMenu, false);
+      openMenu.querySelector(".dl-toggle")?.focus();
+    });
+  }
+
+  // 3. Dynamic Email Hydration & Anti-Scraper
   function getDecodedEmail(elem) {
     if (!elem) return "";
     const { user, domain } = elem.dataset;
@@ -180,7 +242,7 @@
     });
   }
 
-  // 3. Active Section Scrollspy
+  // 4. Active Section Scrollspy
   if ("IntersectionObserver" in window) {
     const sections = document.querySelectorAll("section[id]");
     const navMap = new Map();
@@ -211,7 +273,7 @@
     sections.forEach((sec) => observer.observe(sec));
   }
 
-  // 4. Project Category Filter (Race-Condition Free)
+  // 5. Project Category Filter (Race-Condition Free)
   const filterButtons = document.querySelectorAll(".filter-btn");
   const projectCards = document.querySelectorAll(".project-card[data-category]");
   const cardTimers = new WeakMap();
@@ -276,7 +338,7 @@
     });
   }
 
-  // 5. 3D Stacked Interactive Carousels & Full-Screen Lightbox Inspector
+  // 6. 3D Stacked Interactive Carousels & Full-Screen Lightbox Inspector
   const carousels = document.querySelectorAll("[data-carousel]");
   const lightboxModal = document.querySelector("#lightbox-modal");
   const lightboxImg = document.querySelector("#lightbox-img");
